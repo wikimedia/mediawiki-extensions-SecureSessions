@@ -25,29 +25,29 @@
 $messages = array();
 
 $messages['qqq'] = array(
-	'securesessions-desc' => 'Description of the extension to be shown on Special:Version.',
+	'securesessions-desc' => '{{desc}}',
 	'securesessions-personalurl' => 'Text for the personal URL next to the Logout link at the top of the page. It takes one parameter: the current number of open sessions',
 	'securesessions-ipsession' => 'Label for the checkbox of whether the user wants to log out all other sessions when they log in.',
 	'securesessions-iprestrict' => 'Label for the checkbox of whether the user wants to restrict their login session to the IP address they are using.',
 	'securesessions-uarestrict' => 'Label for the checkbox of whether the user wants to restrict their login to the browser (user agent) they are using.',
-	'sessions' => 'Title for the special page Special:Sessions.',
-	'sessions-legend' => 'Label for the fieldset on Special:Sessions.',
-	'sessions-text' => 'Introductory text at the top of Special:Sessions. It briefly explains the purpose of the page.',
-	'sessions-ip' => 'Label for the IP address of a session description.',
-	'sessions-activity' => 'Label for the last activity time of a session description.',
-	'sessions-clear' => 'Label for the submit button on Special:Sessions that closes all sessions.'
+	'securesessions-sessions' => 'Title for the special page Special:Sessions.',
+	'securesessions-sessions-legend' => 'Label for the fieldset on Special:Sessions.',
+	'securesessions-sessions-text' => 'Introductory text at the top of Special:Sessions. It briefly explains the purpose of the page.',
+	'securesessions-sessions-ip' => 'Label for the IP address of a session description.',
+	'securesessions-sessions-activity' => 'Label for the last activity time of a session description.',
+	'securesessions-sessions-clear' => 'Label for the submit button on Special:Sessions that closes all sessions.'
 );
 
 $messages['en'] = array(
-	'securesessions-desc' => 'Makes user sessions and session authentication more secure.',
-	'securesessions-personalurl' => 'Open Sessions ($1)',
+	'securesessions-desc' => 'Makes user sessions and session authentication more secure',
+	'securesessions-personalurl' => 'Open sessions ($1)',
 	'securesessions-ipsession' => 'Log out all other sessions.',
 	'securesessions-iprestrict' => 'Restrict session to this IP address,',
 	'securesessions-uarestrict' => 'Restrict session to this browser.',
-	'sessions' => 'Sessions',
-	'sessions-legend' => 'Session information',
-	'sessions-text' => 'Below is all of the open sessions for your account and information about them. You can close all other sessions using the button below. An asterisk (*) denotes the current session.',
-	'sessions-ip' => 'IP address:',
-	'sessions-activity' => 'Last activity:',
-	'sessions-clear' => 'Sign out all other sessions'
+	'securesessions-sessions' => 'Sessions',
+	'securesessions-sessions-legend' => 'Session information',
+	'securesessions-sessions-text' => 'Below is all of the open sessions for your account and information about them. You can close all other sessions using the button below. An asterisk (*) denotes the current session.',
+	'securesessions-sessions-ip' => 'IP address:',
+	'securesessions-sessions-activity' => 'Last activity:',
+	'securesessions-sessions-clear' => 'Sign out all other sessions'
 );

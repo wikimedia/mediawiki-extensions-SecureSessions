@@ -41,6 +41,15 @@ class SpecialSessions extends FormSpecialPage {
 	}
 
 	/**
+	 * Get the title of the page.
+	 *
+	 * @return string
+	 */
+	function getDescription() {
+		return $this->msg( 'securesessions-sessions' )->text();
+	}
+
+	/**
 	 * Make sure anonymous users don't use this page, as anonymous
 	 * users cannot log out their other sessions.
 	 *
@@ -74,11 +83,11 @@ class SpecialSessions extends FormSpecialPage {
 			// Make a table describing the session.
 			$description = Html::rawElement( 'table', array(),
 				Html::rawElement( 'tr', array(),
-					Html::element( 'td', array( 'class' => 'mw-label' ), $this->msg( 'sessions-ip' ) ) .
+					Html::element( 'td', array( 'class' => 'mw-label' ), $this->msg( 'securesessions-sessions-ip' ) ) .
 					Html::element( 'td', array( 'class' => 'mw-input' ), $session['ip'] )
 				) .
 				Html::rawElement( 'tr', array(),
-					Html::element( 'td', array( 'class' => 'mw-label' ), $this->msg( 'sessions-activity' ) ) .
+					Html::element( 'td', array( 'class' => 'mw-label' ), $this->msg( 'securesessions-sessions-activity' ) ) .
 					Html::element( 'td', array( 'class' => 'mw-input' ), $timestamp->getHumanTimestamp() )
 				)
 			);
@@ -100,10 +109,29 @@ class SpecialSessions extends FormSpecialPage {
 	/**
 	 * Set the submit button text on the form to an appropriate message.
 	 *
-	 * @param HTMLForm $form The form
+	 * Basically a copy of FormSpecialPage::getForm, except the annoying
+	 * default message keys are changed.
+	 *
+	 * @return HTMLForm
 	 */
-	function alterForm( HTMLForm $form ) {
-		$form->setSubmitTextMsg( 'sessions-clear' );
+	function getForm() {
+		$this->fields = $this->getFormFields();
+
+		$form = new HTMLForm( $this->fields, $this->getContext() );
+		$form->setSubmitCallback( array( $this, 'onSubmit' ) );
+		$form->setWrapperLegend( $this->msg( 'securesessions-sessions-legend' ) );
+		$form->addHeaderText(
+			$this->msg( 'securesessions-sessions-text' )->parseAsBlock() );
+
+		$params = array_diff_key(
+			$this->getRequest()->getQueryValues(), array( 'title' => null ) );
+		$form->addHiddenField( 'redirectparams', wfArrayToCGI( $params ) );
+
+		$form->setMessagePrefix( 'securesessions' );
+		$form->setSubmitTextMsg( 'securesessions-sessions-clear' );
+
+		wfRunHooks( "SpecialSessionsBeforeFormDisplay", array( &$form ) );
+		return $form;
 	}
 
 	/**
