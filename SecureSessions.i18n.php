@@ -24,6 +24,26 @@
 
 $messages = array();
 
+/** English
+ * @author Tyler Romeo
+ */
+$messages['en'] = array(
+	'securesessions-desc' => 'Makes user sessions and session authentication more secure',
+	'securesessions-personalurl' => 'Open sessions ($1)',
+	'securesessions-ipsession' => 'Log out all other sessions.',
+	'securesessions-iprestrict' => 'Restrict session to this IP address,',
+	'securesessions-uarestrict' => 'Restrict session to this browser.',
+	'securesessions-sessions' => 'Sessions',
+	'securesessions-sessions-legend' => 'Session information',
+	'securesessions-sessions-text' => 'Below is all of the open sessions for your account and information about them. You can close all other sessions using the button below. An asterisk (*) denotes the current session.',
+	'securesessions-sessions-ip' => 'IP address:',
+	'securesessions-sessions-activity' => 'Last activity:',
+	'securesessions-sessions-clear' => 'Sign out all other sessions'
+);
+
+/** Message documentation (Message documentation)
+ * @author Tyler Romeo
+ */
 $messages['qqq'] = array(
 	'securesessions-desc' => '{{desc}}',
 	'securesessions-personalurl' => 'Text for the personal URL next to the Logout link at the top of the page. It takes one parameter: the current number of open sessions',
@@ -38,16 +58,3 @@ $messages['qqq'] = array(
 	'securesessions-sessions-clear' => 'Label for the submit button on Special:Sessions that closes all sessions.'
 );
 
-$messages['en'] = array(
-	'securesessions-desc' => 'Makes user sessions and session authentication more secure',
-	'securesessions-personalurl' => 'Open sessions ($1)',
-	'securesessions-ipsession' => 'Log out all other sessions.',
-	'securesessions-iprestrict' => 'Restrict session to this IP address,',
-	'securesessions-uarestrict' => 'Restrict session to this browser.',
-	'securesessions-sessions' => 'Sessions',
-	'securesessions-sessions-legend' => 'Session information',
-	'securesessions-sessions-text' => 'Below is all of the open sessions for your account and information about them. You can close all other sessions using the button below. An asterisk (*) denotes the current session.',
-	'securesessions-sessions-ip' => 'IP address:',
-	'securesessions-sessions-activity' => 'Last activity:',
-	'securesessions-sessions-clear' => 'Sign out all other sessions'
-);
