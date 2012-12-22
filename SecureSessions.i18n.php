@@ -76,6 +76,38 @@ $messages['de'] = array(
 	'securesessions-sessions-clear' => 'Alle anderen Sitzungen abmelden',
 );
 
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'securesessions-sessions-ip' => 'IP-aadress:',
+);
+
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'securesessions-sessions-ip' => 'نشانی آی‌پی:',
+	'securesessions-sessions-activity' => 'آخرین فعالیت:',
+);
+
+/** French (français)
+ * @author Sherbrooke
+ */
+$messages['fr'] = array(
+	'securesessions-desc' => "Sécurise davantage les sessions utilisateur et l'authentification de session",
+	'securesessions-personalurl' => 'Ouvrir des sessions ($1)',
+	'securesessions-ipsession' => 'Terminer toutes les autres sessions.',
+	'securesessions-iprestrict' => 'Restreindre la session à cette adresse IP,',
+	'securesessions-uarestrict' => 'Restreindre la session à ce navigateur Web.',
+	'securesessions-sessions' => 'Sessions',
+	'securesessions-sessions-legend' => 'Informations sur la session',
+	'securesessions-sessions-text' => 'Ci-dessous se trouvent toutes les sessions actives de votre compte et des informations sur elles. Vous pouvez terminer toutes les autres sessions en cliquant sur le bouton plus bas. Une astérique (*) indique la session active.',
+	'securesessions-sessions-ip' => 'Adresse IP :',
+	'securesessions-sessions-activity' => 'Dernière activité :',
+	'securesessions-sessions-clear' => 'Terminer toutes les autres sessions.',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
@@ -110,6 +142,13 @@ $messages['ja'] = array(
 	'securesessions-sessions-clear' => '他のセッションをすべてログアウト',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'securesessions-sessions-ip' => 'IP-მისამართი:',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -125,4 +164,51 @@ $messages['mk'] = array(
 	'securesessions-sessions-ip' => 'IP-адреса:',
 	'securesessions-sessions-activity' => 'Последна активност:',
 	'securesessions-sessions-clear' => 'Одјава од сите други сесии',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'securesessions-desc' => 'Maakt gebrukerssessies en sessieverificatie veiliger',
+	'securesessions-personalurl' => 'Open sessies ($1)',
+	'securesessions-ipsession' => 'Afmelden van alle andere sessies.',
+	'securesessions-iprestrict' => 'Sessie tot dit IP adres beperken.',
+	'securesessions-uarestrict' => 'Sessie tot deze browser beperken.',
+	'securesessions-sessions' => 'Sessies',
+	'securesessions-sessions-legend' => 'Sessiegegevens',
+	'securesessions-sessions-text' => 'Hieronder staan alle open sessies voor uw gebruiken en de bijbehorende gegevens. U kunt alle andere sessies afmelden via de knop hieronder. De huidige sessie wordt met een asterisk (*) aangegeven.',
+	'securesessions-sessions-ip' => 'IP-adres:',
+	'securesessions-sessions-activity' => 'Laatste activiteit:',
+	'securesessions-sessions-clear' => 'Afmelden van alle andere sessies',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'securesessions-sessions' => 'සැසි',
+	'securesessions-sessions-legend' => 'සැසියේ තොරතුරු',
+	'securesessions-sessions-ip' => 'IP ලිපිනය:',
+);
+
+/** Ukrainian (українська)
+ * @author Steve.rusyn
+ */
+$messages['uk'] = array(
+	'securesessions-sessions-ip' => 'IP-адреса:',
+);
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Shirayuki
+ */
+$messages['zh-hans'] = array(
+	'securesessions-sessions-ip' => 'IP地址：',
+);
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Shirayuki
+ */
+$messages['zh-hant'] = array(
+	'securesessions-sessions-ip' => 'IP位址：',
 );
