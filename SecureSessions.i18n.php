@@ -125,6 +125,13 @@ $messages['gl'] = array(
 	'securesessions-sessions-clear' => 'Saír das outras sesións',
 );
 
+/** Italian (italiano)
+ * @author F. Cosoleto
+ */
+$messages['it'] = array(
+	'securesessions-sessions-ip' => 'Indirizzo IP:',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
@@ -192,10 +199,23 @@ $messages['si'] = array(
 	'securesessions-sessions-ip' => 'IP ලිපිනය:',
 );
 
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'securesessions-personalurl' => 'Öppna sessioner ($1)',
+	'securesessions-ipsession' => 'Logga ut alla andra sessioner.',
+	'securesessions-sessions' => 'Sessioner',
+	'securesessions-sessions-ip' => 'IP-adress:',
+	'securesessions-sessions-activity' => 'Senaste aktivitet:',
+);
+
 /** Ukrainian (українська)
  * @author Steve.rusyn
  */
 $messages['uk'] = array(
+	'securesessions-personalurl' => 'Відкрити сесії ($1)',
+	'securesessions-sessions' => 'Сесії',
 	'securesessions-sessions-ip' => 'IP-адреса:',
 );
 
