@@ -190,6 +190,20 @@ $messages['nl'] = array(
 	'securesessions-sessions-clear' => 'Afmelden van alle andere sessies',
 );
 
+/** Romanian (română)
+ * @author Minisarm
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'securesessions-personalurl' => 'Deschide sesiunile ($1)',
+	'securesessions-ipsession' => 'Închide toate celelalte sesiuni.',
+	'securesessions-sessions' => 'Sesiuni',
+	'securesessions-sessions-legend' => 'Informații despre sesiune',
+	'securesessions-sessions-ip' => 'Adresă IP:',
+	'securesessions-sessions-activity' => 'Ultima activitate:',
+	'securesessions-sessions-clear' => 'Închide toate celelalte sesiuni',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
@@ -212,11 +226,20 @@ $messages['sv'] = array(
 
 /** Ukrainian (українська)
  * @author Steve.rusyn
+ * @author Ата
  */
 $messages['uk'] = array(
+	'securesessions-desc' => 'Робить сесії користувачів та автентифікацію сесії більш безпечними',
 	'securesessions-personalurl' => 'Відкрити сесії ($1)',
+	'securesessions-ipsession' => 'Вийти з усіх інших сесій',
+	'securesessions-iprestrict' => 'Обмежити сесію цією IP-адресою,',
+	'securesessions-uarestrict' => 'Обмежити сесію цим браузером.',
 	'securesessions-sessions' => 'Сесії',
+	'securesessions-sessions-legend' => 'Інформація про сесію',
+	'securesessions-sessions-text' => 'Нижче наведено усі відкриті сесії Вашого облікового запису та інформацію про них. Ви можете закрити усі інші сесії кнопкою унизу. Зірочка (*) вказує на поточну сесію.',
 	'securesessions-sessions-ip' => 'IP-адреса:',
+	'securesessions-sessions-activity' => 'Остання активність:',
+	'securesessions-sessions-clear' => 'Вийти з усіх інших сесій',
 );
 
 /** Simplified Chinese (中文（简体）‎)
