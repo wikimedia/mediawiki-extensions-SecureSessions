@@ -190,6 +190,23 @@ $messages['nl'] = array(
 	'securesessions-sessions-clear' => 'Afmelden van alle andere sessies',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'securesessions-desc' => "A rend le session utent e l'autenticassion ëd session pi sigure",
+	'securesessions-personalurl' => 'Deurb session ($1)',
+	'securesessions-ipsession' => "Seurt da tute j'àutre session.",
+	'securesessions-iprestrict' => "Lìmita la session a st'adrëssa IP,",
+	'securesessions-uarestrict' => 'Lìmita session a sto navigador.',
+	'securesessions-sessions' => 'Session',
+	'securesessions-sessions-legend' => 'Anformassion ëd session',
+	'securesessions-sessions-text' => "Sota a-i son tute le session duverte për tò cont e anformassion dzora ëd lor. It peule saré tute j'àutre session dovrand ël boton sota. N'asterisch (*) a ìndica la session corenta.",
+	'securesessions-sessions-ip' => 'Adrëssa IP:',
+	'securesessions-sessions-activity' => 'Ùltima atività:',
+	'securesessions-sessions-clear' => "Seurt da tute j'àutre session",
+);
+
 /** Romanian (română)
  * @author Minisarm
  * @author Stelistcristi
