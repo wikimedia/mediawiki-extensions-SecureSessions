@@ -241,6 +241,14 @@ $messages['sv'] = array(
 	'securesessions-sessions-activity' => 'Senaste aktivitet:',
 );
 
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'securesessions-sessions-ip' => 'ஐ.பி. முகவரி:',
+	'securesessions-sessions-activity' => 'கடைசி செயல்பாடு:',
+);
+
 /** Ukrainian (українська)
  * @author Steve.rusyn
  * @author Ата
