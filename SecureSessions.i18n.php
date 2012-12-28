@@ -126,10 +126,21 @@ $messages['gl'] = array(
 );
 
 /** Italian (italiano)
+ * @author Beta16
  * @author F. Cosoleto
  */
 $messages['it'] = array(
+	'securesessions-desc' => 'Rende più sicure le sessioni utente e le autenticazione di sessione',
+	'securesessions-personalurl' => 'Sessioni aperte ($1)',
+	'securesessions-ipsession' => 'Uscire da tutte le altre sessioni.',
+	'securesessions-iprestrict' => 'Limitare la sessione a questo indirizzo IP,',
+	'securesessions-uarestrict' => 'Limitare la sessione a questo browser.',
+	'securesessions-sessions' => 'Sessioni',
+	'securesessions-sessions-legend' => 'Informazioni sulla sessione',
+	'securesessions-sessions-text' => 'Qui sono elencate tutte le sessioni aperte per il tuo account e alcune informazioni su di esse. È possibile chiudere tutte le altre sessioni utilizzando il pulsante qui sotto. Un asterisco (*) indica la sessione corrente.',
 	'securesessions-sessions-ip' => 'Indirizzo IP:',
+	'securesessions-sessions-activity' => 'Ultima attività:',
+	'securesessions-sessions-clear' => 'Uscire da tutte le altre sessioni',
 );
 
 /** Japanese (日本語)
