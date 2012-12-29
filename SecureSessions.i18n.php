@@ -236,9 +236,11 @@ $messages['ro'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'securesessions-personalurl' => 'විවෘත සැසි ($1)',
 	'securesessions-sessions' => 'සැසි',
 	'securesessions-sessions-legend' => 'සැසියේ තොරතුරු',
 	'securesessions-sessions-ip' => 'IP ලිපිනය:',
+	'securesessions-sessions-activity' => 'අවසන් ක්‍රියාකාරකම:',
 );
 
 /** Swedish (svenska)
