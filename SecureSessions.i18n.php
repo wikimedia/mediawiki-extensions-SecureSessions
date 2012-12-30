@@ -232,11 +232,22 @@ $messages['ro'] = array(
 	'securesessions-sessions-clear' => 'Închide toate celelalte sesiuni',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'securesessions-personalurl' => 'Iapre le sessiune ($1)',
+	'securesessions-sessions' => 'Sessiune',
+	'securesessions-sessions-ip' => 'Indirizze IP:',
+	'securesessions-sessions-activity' => 'Urtema attività:',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
 	'securesessions-personalurl' => 'විවෘත සැසි ($1)',
+	'securesessions-ipsession' => 'වෙනත් සියලුම සැසි වලින් නික්මෙන්න.',
 	'securesessions-sessions' => 'සැසි',
 	'securesessions-sessions-legend' => 'සැසියේ තොරතුරු',
 	'securesessions-sessions-ip' => 'IP ලිපිනය:',
