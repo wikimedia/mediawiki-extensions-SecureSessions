@@ -59,6 +59,13 @@ $messages['qqq'] = array(
 	'securesessions-sessions-clear' => 'Label for the submit button on Special:Sessions that closes all sessions.',
 );
 
+/** Czech (česky)
+ * @author Vks
+ */
+$messages['cs'] = array(
+	'securesessions-sessions-ip' => 'IP adresa:',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  */
@@ -248,10 +255,13 @@ $messages['roa-tara'] = array(
 $messages['si'] = array(
 	'securesessions-personalurl' => 'විවෘත සැසි ($1)',
 	'securesessions-ipsession' => 'වෙනත් සියලුම සැසි වලින් නික්මෙන්න.',
+	'securesessions-iprestrict' => 'මෙම IP ලිපිනයට සැසිය අවහිර කරන්න,',
+	'securesessions-uarestrict' => 'මෙම ගවේශකයට සැසිය අවහිර කරන්න.',
 	'securesessions-sessions' => 'සැසි',
 	'securesessions-sessions-legend' => 'සැසියේ තොරතුරු',
 	'securesessions-sessions-ip' => 'IP ලිපිනය:',
 	'securesessions-sessions-activity' => 'අවසන් ක්‍රියාකාරකම:',
+	'securesessions-sessions-clear' => 'වෙනත් සියලුම සැසි වලින් නික්මෙන්න',
 );
 
 /** Swedish (svenska)
