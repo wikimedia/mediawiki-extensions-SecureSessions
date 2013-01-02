@@ -99,10 +99,11 @@ $messages['fa'] = array(
 );
 
 /** French (français)
+ * @author Crochet.david
  * @author Sherbrooke
  */
 $messages['fr'] = array(
-	'securesessions-desc' => "Sécurise davantage les sessions utilisateur et l'authentification de session",
+	'securesessions-desc' => 'Sécurise davantage les sessions utilisateur et l’authentification de session',
 	'securesessions-personalurl' => 'Ouvrir des sessions ($1)',
 	'securesessions-ipsession' => 'Terminer toutes les autres sessions.',
 	'securesessions-iprestrict' => 'Restreindre la session à cette adresse IP,',
