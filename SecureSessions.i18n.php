@@ -210,17 +210,18 @@ $messages['nl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
 	'securesessions-desc' => "A rend le session utent e l'autenticassion ëd session pi sigure",
-	'securesessions-personalurl' => 'Deurb session ($1)',
+	'securesessions-personalurl' => 'Duverté dle session ($1)',
 	'securesessions-ipsession' => "Seurt da tute j'àutre session.",
 	'securesessions-iprestrict' => "Lìmita la session a st'adrëssa IP,",
-	'securesessions-uarestrict' => 'Lìmita session a sto navigador.',
+	'securesessions-uarestrict' => 'Limité la session a cost navigador.',
 	'securesessions-sessions' => 'Session',
 	'securesessions-sessions-legend' => 'Anformassion ëd session',
-	'securesessions-sessions-text' => "Sota a-i son tute le session duverte për tò cont e anformassion dzora ëd lor. It peule saré tute j'àutre session dovrand ël boton sota. N'asterisch (*) a ìndica la session corenta.",
+	'securesessions-sessions-text' => "Sì-sota a-i son tute le session duverte ëd tò cont e dj'anformassion dzora ëd lor. A peul saré tute j'àutre session dovrand ël boton sota. N'asterisch (*) a mostra la session corenta.",
 	'securesessions-sessions-ip' => 'Adrëssa IP:',
 	'securesessions-sessions-activity' => 'Ùltima atività:',
 	'securesessions-sessions-clear' => "Seurt da tute j'àutre session",
