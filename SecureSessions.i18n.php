@@ -54,7 +54,8 @@ $messages['qqq'] = array(
 	'securesessions-sessions' => 'Title for the special page Special:Sessions.',
 	'securesessions-sessions-legend' => 'Label for the fieldset on Special:Sessions.',
 	'securesessions-sessions-text' => 'Introductory text at the top of Special:Sessions. It briefly explains the purpose of the page.',
-	'securesessions-sessions-ip' => 'Label for the IP address of a session description.',
+	'securesessions-sessions-ip' => 'Label for the IP address of a session description.
+{{Identical|IP Address}}',
 	'securesessions-sessions-activity' => 'Label for the last activity time of a session description.',
 	'securesessions-sessions-clear' => 'Label for the submit button on Special:Sessions that closes all sessions.',
 );
