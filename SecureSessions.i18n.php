@@ -176,6 +176,23 @@ $messages['ka'] = array(
 	'securesessions-sessions-ip' => 'IP-მისამართი:',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'securesessions-desc' => 'Mécht Benotzersessiounen an Authentificatioun vun der Sessioun méi sécher',
+	'securesessions-personalurl' => 'Ope Sessiounen ($1)',
+	'securesessions-ipsession' => 'Aus allen anere Sessiounen erausgoen.',
+	'securesessions-iprestrict' => 'Sessioun op dës IP-Adress limitéieren.',
+	'securesessions-uarestrict' => 'Sessioun op dëse Browser limitéieren.',
+	'securesessions-sessions' => 'Sessiounen',
+	'securesessions-sessions-legend' => 'Informatioun vun der Sessioun',
+	'securesessions-sessions-text' => "Hei drënner ass eng Lëscht vun all den oppene Sessioune fir Äre Benotzerkont mat den Informatiounen doriwwer. Dir kënnt all d'Sessioune ma t dem Knäppchen drënner zoumaachen. Ee Stär (*) markéiert déi aktuell Sessioun.",
+	'securesessions-sessions-ip' => 'IP-Adress:',
+	'securesessions-sessions-activity' => 'Lescht Aktivitéit:',
+	'securesessions-sessions-clear' => 'All aner Sessiounen zoumaachen',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
