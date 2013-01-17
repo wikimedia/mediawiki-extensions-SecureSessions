@@ -38,7 +38,9 @@ $messages['en'] = array(
 	'securesessions-sessions-text' => 'Below is all of the open sessions for your account and information about them. You can close all other sessions using the button below. An asterisk (*) denotes the current session.',
 	'securesessions-sessions-ip' => 'IP address:',
 	'securesessions-sessions-activity' => 'Last activity:',
-	'securesessions-sessions-clear' => 'Sign out all other sessions'
+	'securesessions-sessions-clear' => 'Sign out all other sessions',
+	'securesessions-prefs-country' => 'Restrict login by country:',
+	'securesessions-disallowedcountry' => 'This account is not allowed to log in from this country.'
 );
 
 /** Message documentation (Message documentation)
@@ -58,6 +60,8 @@ $messages['qqq'] = array(
 {{Identical|IP Address}}',
 	'securesessions-sessions-activity' => 'Label for the last activity time of a session description.',
 	'securesessions-sessions-clear' => 'Label for the submit button on Special:Sessions that closes all sessions.',
+	'securesessions-prefs-country' => 'Label for the user option restricting login to a certain country',
+	'securesessions-disallowedcountry' => 'Message for logins that are aborted because the user is not allowed to log in from that country'
 );
 
 /** Czech (česky)

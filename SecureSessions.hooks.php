@@ -95,6 +95,8 @@ class SecureSessions extends ContextSource {
 		}
 
 		Hooks::register( 'PersonalUrls', $clPropAuth );
+		Hooks::register( 'GetPreferences', $clPropAuth );
+		Hooks::register( 'AbortLogin', $clPropAuth );
 		Hooks::register( 'UserLoginForm', $clPropAuth );
 		Hooks::register( 'UserLoadFromSession', $clPropAuth );
 		Hooks::register( 'UserSetCookies', $clPropAuth );
@@ -116,6 +118,33 @@ class SecureSessions extends ContextSource {
 		if( array_key_exists( 'singlesession', $options ) ) {
 			$this->oneSession = $options['singlesession'];
 		}
+	}
+
+	/**
+	 * Check if the user is allowed to log in from this country.
+	 *
+	 * @param User $user User logging in
+	 * @param string $password Password given
+	 * @param int &$retval Result of the login
+	 * @return bool
+	 */
+	public function onAbortLogin( User $user, $password, &$retval, &$msg ) {
+		$request = $this->getRequest();
+
+		$forwardedFor = $request->getHeader( 'X-Forwarded-For' );
+		if( $forwardedFor ) {
+			$ip = trim( array_pop( explode( ',', $forwardedFor ) ) );
+		} else {
+			$ip = $request->getIP();
+		}
+
+		$actualLocation = $this->getLocation( $ip );
+		$expectedLocation = $user->getOption( 'securesessions-country', 0 );
+
+		$msg = 'securesessions-disallowedcountry';
+		// Do weak comparison because if user doesn't have the option set,
+		// a default of 0 will be returned.
+		return $actualLocation[1] == $expectedLocation;
 	}
 
 	/**
@@ -318,6 +347,34 @@ class SecureSessions extends ContextSource {
 	}
 
 	/**
+	 * Add a preference so the user can restrict what country his/her
+	 * account can log in from.
+	 *
+	 * @param User $user User whose preferences are being gotten
+	 * @param array &$preferences Array of preference descriptors
+	 * @return bool true
+	 */
+	public function onGetPreferences( User $user, array &$preferences ) {
+		global $wgLang;
+
+		if( !is_callable( array( 'CountryNames', 'getNames' ) ) ) {
+			return true;
+		}
+
+		$countries = CountryNames::getNames( $wgLang->getCode() );
+
+		$preferences['securesessions-country'] = array(
+			'type' => 'select',
+			'label-message' => 'securesessions-prefs-country',
+			'section' => 'personal/info',
+			'options' => array_flip( $countries ),
+			'default' => $user->getOption( 'securesessions-country', 0 )
+		);
+
+		return true;
+	}
+
+	/**
 	 * Add a personal URL for the open sessions page
 	 *
 	 * @param array &$personal_urls Array of personal URLs
@@ -408,5 +465,70 @@ class SecureSessions extends ContextSource {
 		$sessions = $wgMemc->get( $memcKey );
 		unset( $sessions[$request->getSessionData( 'id' )] );
 		$wgMemc->set( $memcKey, $sessions );
+	}
+
+	/**
+	 * Get the continent and country where an IP address is located.
+	 *
+	 * @param string $ip IP address
+	 * @return bool|array Continent and country or false on failure
+	 */
+	public function getLocation( $ip ) {
+		static $db = null;
+		static $dbv6 = null;
+		$country = false;
+		for( $i = 0, $found = false; !$found; $i++ ) { switch( $i ) {
+			case 0:
+				if( !function_exists( 'apache_note' ) ) {
+					break;
+				}
+				$ipUsed = apache_note( 'GEOIP_ADDR' );
+				$continent = apache_note( 'GEOIP_CONTINENT_CODE' );
+				$country = apache_note( 'GEOIP_COUNTRY_CODE' );
+				$found = $ip === $ipUsed;
+				break;
+			case 1:
+				$ipUsed = getenv( 'GEOIP_ADDR' );
+				$continent = getenv( 'GEOIP_CONTINENT_NAME' );
+				$country = getenv( 'GEOIP_COUNTRY_NAME' );
+				$found = $ip === $ipUsed;
+				break;
+			case 2:
+				if(
+					!function_exists( "geoip_db_avail" ) ||
+					!geoip_db_avail( GEOIP_COUNTRY_EDITION )
+				) {
+					break;
+				}
+				$continent = geoip_continent_code_by_name( $ip );
+				$country = geoip_country_code_by_name( $ip );
+				$found = $country !== false;
+				break;
+			case 3:
+				require_once( __DIR__ . "/php-geoip/geoip.inc" );
+				$v6 = IP::isIPv6( $ip );
+				$dbname = $v6 ? 'dbv6' : 'db';
+				if( $$dbname === null ) {
+					if( function_exists( 'shmop_open' ) ) {
+						geoip_load_shared_mem( __DIR__ . "/geoip/GeoIP.$dbname.dat" );
+						$$dbname = geoip_open( __DIR__ . "/geoip/GeoIP.$dbname.dat", GEOIP_SHARED_MEMORY );
+					} else {
+						$$dbname = geoip_open( __DIR__ . "/geoip/GeoIP.$dbname.dat", GEOIP_STANDARD );
+					}
+				}
+
+				$continent = true;
+				if( $v6 ) {
+					$country = geoip_country_code_by_addr_v6( $$dbname, $ip );
+				} else {
+					$country = geoip_country_code_by_addr( $$dbname, $ip );
+				}
+				$found = $country !== false;
+				break;
+			default:
+				return false;
+		} }
+
+		return array( $continent, $country );
 	}
 }
