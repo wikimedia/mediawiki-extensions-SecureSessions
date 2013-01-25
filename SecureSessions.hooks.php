@@ -235,7 +235,7 @@ class SecureSessions extends ContextSource {
 		// Cookies are valid, now check if user is attempting to resume an old session (token is valid, but no session).
 		if(
 			$request->getSessionData( 'wsUserID' ) === null &&
-			$user->getToken( false ) === $request->getCookie( 'wsToken' )
+			$user->getToken( false ) === $request->getCookie( 'Token' )
 		) {
 			// The user opted to remember their session, and the session is currently not attached
 			// to a user, so set the necessary session data so that the checks below will pass.
