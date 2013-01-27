@@ -340,9 +340,20 @@ $messages['uk'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Shirayuki
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'securesessions-desc' => '使用户会话和会话认证更安全',
+	'securesessions-personalurl' => '打开的会话 ($1)',
+	'securesessions-ipsession' => '注销所有其他会话。',
+	'securesessions-iprestrict' => '限制会话到此IP地址，',
+	'securesessions-uarestrict' => '限制会话到此浏览器，',
+	'securesessions-sessions' => '会话',
+	'securesessions-sessions-legend' => '会话信息',
+	'securesessions-sessions-text' => '以下是您的帐户所有打开的会话，以及有关它们的信息。您可以使用下面的按钮关闭所有其他会话。带有一个星号(*)表示是当前的会话。',
 	'securesessions-sessions-ip' => 'IP地址：',
+	'securesessions-sessions-activity' => '最后活动：',
+	'securesessions-sessions-clear' => '注销所有其他会话',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
