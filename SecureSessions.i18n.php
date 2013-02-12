@@ -40,7 +40,9 @@ $messages['en'] = array(
 	'securesessions-sessions-activity' => 'Last activity:',
 	'securesessions-sessions-clear' => 'Sign out all other sessions',
 	'securesessions-prefs-country' => 'Restrict login by country:',
-	'securesessions-disallowedcountry' => 'This account is not allowed to log in from this country.'
+	'securesessions-prefs-tor' => 'Disallow logins from Tor exit nodes.',
+	'securesessions-disallowedcountry' => 'This account is not allowed to log in from this country.',
+	'securesessions-disallowedtor' => 'This account is not allowed to log in from Tor exit nodes.'
 );
 
 /** Message documentation (Message documentation)
@@ -61,7 +63,9 @@ $messages['qqq'] = array(
 	'securesessions-sessions-activity' => 'Label for the last activity time of a session description.',
 	'securesessions-sessions-clear' => 'Label for the submit button on Special:Sessions that closes all sessions.',
 	'securesessions-prefs-country' => 'Label for the user option restricting login to a certain country',
-	'securesessions-disallowedcountry' => 'Message for logins that are aborted because the user is not allowed to log in from that country'
+	'securesessions-prefs-tor' => 'Label for the user option restricting login from Tor exit nodes',
+	'securesessions-disallowedcountry' => 'Message for logins that are aborted because the user is not allowed to log in from that country',
+	'securesessions-disallowedtor' => 'Message for logins that are aborted because the user tried to log in from a Tor exit node.'
 );
 
 /** Czech (česky)

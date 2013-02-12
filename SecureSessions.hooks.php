@@ -131,6 +131,7 @@ class SecureSessions extends ContextSource {
 	public function onAbortLogin( User $user, $password, &$retval, &$msg ) {
 		$request = $this->getRequest();
 
+		// Location checking.
 		$forwardedFor = $request->getHeader( 'X-Forwarded-For' );
 		if( $forwardedFor ) {
 			$ip = trim( array_pop( explode( ',', $forwardedFor ) ) );
@@ -141,10 +142,24 @@ class SecureSessions extends ContextSource {
 		$actualLocation = $this->getLocation( $ip );
 		$expectedLocation = $user->getOption( 'securesessions-country', 0 );
 
-		$msg = 'securesessions-disallowedcountry';
 		// Do weak comparison because if user doesn't have the option set,
 		// a default of 0 will be returned.
-		return $actualLocation[1] == $expectedLocation;
+		if( $actualLocation[1] != $expectedLocation ) {
+			$msg = 'securesessions-disallowedcountry';
+			return false;
+		}
+
+		// Tor check
+		if(
+			is_callable( array( 'TorExitNodes', 'isExitNode' ) ) &&
+			$user->getOption( 'securesessions-tor' ) &&
+			TorExitNodes::isExitNode( $ip )
+		) {
+			$msg = 'securesessions-disallowedtor';
+			return false;
+		}
+
+		return true;
 	}
 
 	/**
@@ -357,19 +372,25 @@ class SecureSessions extends ContextSource {
 	public function onGetPreferences( User $user, array &$preferences ) {
 		global $wgLang;
 
-		if( !is_callable( array( 'CountryNames', 'getNames' ) ) ) {
-			return true;
+		if( is_callable( array( 'CountryNames', 'getNames' ) ) ) {
+			$countries = CountryNames::getNames( $wgLang->getCode() );
+
+			$preferences['securesessions-country'] = array(
+				'type' => 'select',
+				'label-message' => 'securesessions-prefs-country',
+				'section' => 'personal/info',
+				'options' => array_flip( $countries ),
+				'default' => $user->getOption( 'securesessions-country', 0 )
+			);
 		}
 
-		$countries = CountryNames::getNames( $wgLang->getCode() );
-
-		$preferences['securesessions-country'] = array(
-			'type' => 'select',
-			'label-message' => 'securesessions-prefs-country',
-			'section' => 'personal/info',
-			'options' => array_flip( $countries ),
-			'default' => $user->getOption( 'securesessions-country', 0 )
-		);
+		if( is_callable( array( 'TorExitNodes', 'isExitNode' ) ) ) {
+			$preferences['securesessions-tor'] = array(
+				'type' => 'check',
+				'label-message' => 'securesessions-prefs-tor',
+				'section' => 'personal/info',
+			);
+		}
 
 		return true;
 	}
