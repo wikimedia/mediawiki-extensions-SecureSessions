@@ -191,6 +191,7 @@ $messages['ja'] = array(
  */
 $messages['ka'] = array(
 	'securesessions-sessions-ip' => 'IP-მისამართი:',
+	'securesessions-sessions-activity' => 'ბოლო აქტიურობა:',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
