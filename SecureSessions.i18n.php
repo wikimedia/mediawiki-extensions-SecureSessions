@@ -65,7 +65,7 @@ $messages['qqq'] = array(
 	'securesessions-prefs-country' => 'Label for the user option restricting login to a certain country',
 	'securesessions-prefs-tor' => 'Label for the user option restricting login from Tor exit nodes',
 	'securesessions-disallowedcountry' => 'Message for logins that are aborted because the user is not allowed to log in from that country',
-	'securesessions-disallowedtor' => 'Message for logins that are aborted because the user tried to log in from a Tor exit node.'
+	'securesessions-disallowedtor' => 'Message for logins that are aborted because the user tried to log in from a Tor exit node.',
 );
 
 /** Czech (česky)
@@ -90,6 +90,10 @@ $messages['de'] = array(
 	'securesessions-sessions-ip' => 'IP-Adresse:',
 	'securesessions-sessions-activity' => 'Letzte Aktivität:',
 	'securesessions-sessions-clear' => 'Alle anderen Sitzungen abmelden',
+	'securesessions-prefs-country' => 'Anmeldung beschränken auf Staat:',
+	'securesessions-prefs-tor' => 'Anmeldungen von Tor-Ausgangsknoten verweigern.',
+	'securesessions-disallowedcountry' => 'Dieses Konto ist nicht zur Anmeldung aus diesem Staat berechtigt.',
+	'securesessions-disallowedtor' => 'Dieses Konto ist nicht zur Anmeldung von Tor-Ausgangsknoten berechtigt.',
 );
 
 /** Estonian (eesti)
@@ -126,6 +130,7 @@ $messages['fi'] = array(
 
 /** French (français)
  * @author Crochet.david
+ * @author Gomoko
  * @author Sherbrooke
  */
 $messages['fr'] = array(
@@ -140,6 +145,10 @@ $messages['fr'] = array(
 	'securesessions-sessions-ip' => 'Adresse IP :',
 	'securesessions-sessions-activity' => 'Dernière activité :',
 	'securesessions-sessions-clear' => 'Terminer toutes les autres sessions.',
+	'securesessions-prefs-country' => 'Restreindre la connexion par pays:',
+	'securesessions-prefs-tor' => 'Interdire les connexions depuis les nœuds de sortie de Tor.',
+	'securesessions-disallowedcountry' => 'Ce compte n’est pas autorisé à se connecter depuis ce pays.',
+	'securesessions-disallowedtor' => 'Ce compte n’est pas autorisé à se connecter depuis des nœuds de sortie de Tor.',
 );
 
 /** Galician (galego)
