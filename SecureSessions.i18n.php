@@ -166,6 +166,10 @@ $messages['gl'] = array(
 	'securesessions-sessions-ip' => 'Enderezo IP:',
 	'securesessions-sessions-activity' => 'Última actividade:',
 	'securesessions-sessions-clear' => 'Saír das outras sesións',
+	'securesessions-prefs-country' => 'Restrinxir o acceso por país:',
+	'securesessions-prefs-tor' => 'Impedir os accesos desde os nodos de saída Tor.',
+	'securesessions-disallowedcountry' => 'Esta conta non ten permiso para acceder desde este país.',
+	'securesessions-disallowedtor' => 'Esta conta non ten permiso para acceder desde nodos de saída Tor.',
 );
 
 /** Italian (italiano)
@@ -243,6 +247,10 @@ $messages['mk'] = array(
 	'securesessions-sessions-ip' => 'IP-адреса:',
 	'securesessions-sessions-activity' => 'Последна активност:',
 	'securesessions-sessions-clear' => 'Одјава од сите други сесии',
+	'securesessions-prefs-country' => 'ограничи најава по земји:',
+	'securesessions-prefs-tor' => 'Забрани најава од излезни јазли на Tor.',
+	'securesessions-disallowedcountry' => 'На сметката не ѝ е дозволено да се најавува од оваа земја.',
+	'securesessions-disallowedtor' => 'На сметката не ѝ е дозволено да се најавува од излезни јазли на Tor.',
 );
 
 /** Dutch (Nederlands)
