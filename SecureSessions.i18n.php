@@ -347,6 +347,7 @@ $messages['ta'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Base
  * @author Steve.rusyn
  * @author Ата
  */
@@ -362,6 +363,7 @@ $messages['uk'] = array(
 	'securesessions-sessions-ip' => 'IP-адреса:',
 	'securesessions-sessions-activity' => 'Остання активність:',
 	'securesessions-sessions-clear' => 'Вийти з усіх інших сесій',
+	'securesessions-prefs-country' => 'Обмежити вхід за країнами:',
 );
 
 /** Simplified Chinese (中文（简体）‎)
