@@ -55,7 +55,8 @@ $messages['qqq'] = array(
 	'securesessions-ipsession' => 'Label for the checkbox of whether the user wants to log out all other sessions when they log in.',
 	'securesessions-iprestrict' => 'Label for the checkbox of whether the user wants to restrict their login session to the IP address they are using.',
 	'securesessions-uarestrict' => 'Label for the checkbox of whether the user wants to restrict their login to the browser (user agent) they are using.',
-	'securesessions-sessions' => 'Title for the special page Special:Sessions.',
+	'securesessions-sessions' => 'Title for the special page Special:Sessions.
+{{Identical|Session}}',
 	'securesessions-sessions-legend' => 'Label for the fieldset on Special:Sessions.',
 	'securesessions-sessions-text' => 'Introductory text at the top of Special:Sessions. It briefly explains the purpose of the page.',
 	'securesessions-sessions-ip' => 'Label for the IP address of a session description.
