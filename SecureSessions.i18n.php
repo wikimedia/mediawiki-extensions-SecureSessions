@@ -60,7 +60,7 @@ $messages['qqq'] = array(
 	'securesessions-sessions-legend' => 'Label for the fieldset on Special:Sessions.',
 	'securesessions-sessions-text' => 'Introductory text at the top of Special:Sessions. It briefly explains the purpose of the page.',
 	'securesessions-sessions-ip' => 'Label for the IP address of a session description.
-{{Identical|IP Address}}',
+{{Identical|IP address}}',
 	'securesessions-sessions-activity' => 'Label for the last activity time of a session description.',
 	'securesessions-sessions-clear' => 'Label for the submit button on Special:Sessions that closes all sessions.',
 	'securesessions-prefs-country' => 'Label for the user option restricting login to a certain country',
@@ -269,6 +269,10 @@ $messages['nl'] = array(
 	'securesessions-sessions-ip' => 'IP-adres:',
 	'securesessions-sessions-activity' => 'Laatste activiteit:',
 	'securesessions-sessions-clear' => 'Afmelden van alle andere sessies',
+	'securesessions-prefs-country' => 'Aanmelden beperken op land:',
+	'securesessions-prefs-tor' => 'Aanmelden vanaf Tor exitnodes weigeren',
+	'securesessions-disallowedcountry' => 'Deze gebruiker mag niet aanmelden vanuit dit land.',
+	'securesessions-disallowedtor' => 'Deze gebruiker mag niet aanmelden vanaf Tor exitnodes.',
 );
 
 /** Piedmontese (Piemontèis)
