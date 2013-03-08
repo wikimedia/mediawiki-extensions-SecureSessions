@@ -69,6 +69,13 @@ $messages['qqq'] = array(
 	'securesessions-disallowedtor' => 'Message for logins that are aborted because the user tried to log in from a Tor exit node.',
 );
 
+/** Breton (brezhoneg)
+ * @author Fohanno
+ */
+$messages['br'] = array(
+	'securesessions-sessions' => "Dalc'hoù",
+);
+
 /** Czech (česky)
  * @author Vks
  */
