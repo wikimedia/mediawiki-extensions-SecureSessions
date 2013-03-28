@@ -261,6 +261,13 @@ $messages['mk'] = array(
 	'securesessions-disallowedtor' => 'На сметката не ѝ е дозволено да се најавува од излезни јазли на Tor.',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'securesessions-sessions-ip' => 'IP-Adress:',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
