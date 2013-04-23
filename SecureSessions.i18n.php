@@ -238,6 +238,8 @@ $messages['lb'] = array(
 	'securesessions-sessions-ip' => 'IP-Adress:',
 	'securesessions-sessions-activity' => 'Lescht Aktivitéit:',
 	'securesessions-sessions-clear' => 'All aner Sessiounen zoumaachen',
+	'securesessions-prefs-country' => "Aloggen limitéieren op d'Land:",
+	'securesessions-disallowedcountry' => 'Dëse Kont ass net autoriséiert fir sech aus dësem Land anzeloggen.',
 );
 
 /** Macedonian (македонски)
