@@ -246,7 +246,7 @@ $messages['lb'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'securesessions-desc' => 'Дава поголема безбедност за кориснички сесии и нивната заверка',
+	'securesessions-desc' => 'Дава поголема безбедност за кориснички сесии и нивното скривање',
 	'securesessions-personalurl' => 'Отворени сесии ($1)',
 	'securesessions-ipsession' => 'Одјава од сите други сесии',
 	'securesessions-iprestrict' => 'Ограничи ја сесијата на оваа IP-адреса,',
