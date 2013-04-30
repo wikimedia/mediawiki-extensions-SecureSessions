@@ -57,7 +57,7 @@ class SpecialSessions extends FormSpecialPage {
 	 * @throws UserNotLoggedIn If user is not logged in
 	 */
 	function checkExecutePermissions( User $user ) {
-		if( $user->isAnon() ) {
+		if ( $user->isAnon() ) {
 			throw new UserNotLoggedIn;
 		}
 	}
@@ -77,7 +77,7 @@ class SpecialSessions extends FormSpecialPage {
 		// Use a separate ID variable because the cache array may have
 		// missing indexes and whatnot from logged out sessions.
 		$id = 1;
-		foreach( $sessions as  $sId => $session ) {
+		foreach ( array_filter( (array)$sessions ) as  $sId => $session ) {
 			$timestamp = new MWTimestamp( $sessions['time'] );
 
 			// Make a table describing the session.

@@ -62,7 +62,7 @@ class SecureSessions extends ContextSource {
 		// Regenerate session ID to avoid fixation, but don't trash
 		// the old session immediately in case there are some asynchronous
 		// requests still using it.
-		if( $wgSessionCycleId && $wgSessionStarted && $request->getSessionData( 'wsExpiry' ) === null ) {
+		if ( $wgSessionCycleId && $wgSessionStarted && $request->getSessionData( 'wsExpiry' ) === null ) {
 			// Set obsolete and expiration time.
 			$data = $_SESSION;
 			$request->setSessionData( 'wsObsolete', true );
@@ -79,16 +79,16 @@ class SecureSessions extends ContextSource {
 		}
 
 		// Boolean values are translated to constant options.
-		if( $wgEnhancedSessionAuth === true ) {
+		if ( $wgEnhancedSessionAuth === true ) {
 			$options = array( 'useragent' => true, 'ip' => true, 'singlesession' => null );
-		} elseif( $wgEnhancedSessionAuth === false ) {
+		} elseif ( $wgEnhancedSessionAuth === false ) {
 			$options = array();
 		} else {
 			$options = $wgEnhancedSessionAuth;
 		}
 
 		// Instantiate and register hooks.
-		if( $options instanceof self ) {
+		if ( $options instanceof self ) {
 			$clPropAuth = $options;
 		} else {
 			$clPropAuth = new self( $options );
@@ -109,13 +109,13 @@ class SecureSessions extends ContextSource {
 	 * @param array $options Authentication options
 	 */
 	public function __construct( array $options ) {
-		if( array_key_exists( 'ip', $options ) ) {
+		if ( array_key_exists( 'ip', $options ) ) {
 			$this->ip = $options['ip'];
 		}
-		if( array_key_exists( 'useragent', $options ) ) {
+		if ( array_key_exists( 'useragent', $options ) ) {
 			$this->userAgent = $options['useragent'];
 		}
-		if( array_key_exists( 'singlesession', $options ) ) {
+		if ( array_key_exists( 'singlesession', $options ) ) {
 			$this->oneSession = $options['singlesession'];
 		}
 	}
@@ -177,7 +177,7 @@ class SecureSessions extends ContextSource {
 		global $wgMemc;
 		$request = $this->getRequest();
 
-		if(
+		if (
 			$this->oneSession === true ||
 			$this->oneSession === null &&
 			$request->getCheck( 'wpLimitSessionOne' )
@@ -193,25 +193,25 @@ class SecureSessions extends ContextSource {
 		}
 
 		// Store the user agent and IP address if needed.
-		if(
+		if (
 			$this->userAgent === true ||
 			$this->userAgent === null &&
 			( $request->getCheck( 'wpLimitSessionUA' ) || $request->getCookie( 'RestrictUA' ) )
 		) {
 			// Only set cookie if user checked Remember Me.
-			if( $cookies['Token'] !== false ) {
+			if ( $cookies['Token'] !== false ) {
 				$cookies['RestrictUA'] = true;
 			}
 			$session['wsUserAgent'] = $_SERVER['HTTP_USER_AGENT'];
 		}
 
-		if(
+		if (
 			$this->ip === true ||
 			$this->ip === null &&
 			( $request->getCheck( 'wpLimitSessionIP' ) || $request->getCookie( 'RestrictIP' ) )
 		) {
 			// Only set cookie if user checked Remember Me.
-			if( $cookies['Token'] !== false ) {
+			if ( $cookies['Token'] !== false ) {
 				$cookies['RestrictIP'] = true;
 			}
 			$session['wsIPAddress'] = $request->getIP();
@@ -238,7 +238,7 @@ class SecureSessions extends ContextSource {
 		$request->setSessionData( 'wsUserAgent', null );
 		$request->setSessionData( 'wsIPAddress', null );
 
-		if( $request->getCookie( 'forceHTTPS' ) && WebRequest::detectProtocol() === 'https' ) {
+		if ( $request->getCookie( 'forceHTTPS' ) && WebRequest::detectProtocol() === 'https' ) {
 			$response->header( "Strict-Transport-Security: max-age=0" );
 		}
 
@@ -260,7 +260,7 @@ class SecureSessions extends ContextSource {
 		$ip = $request->getSessionData( 'wsIPAddress' );
 
 		// Check if session has expired.
-		if( $request->getSessionData( 'wsObsolete' ) && $request->getSessionData( 'wsExpiry' ) < time() ) {
+		if ( $request->getSessionData( 'wsObsolete' ) && $request->getSessionData( 'wsExpiry' ) < time() ) {
 			// Remove all session variables, delete the session cookie, and destroy the session.
 			session_unset();
 			$request->response()->setcookie( session_name(), '', 0, '' );
@@ -271,13 +271,13 @@ class SecureSessions extends ContextSource {
 		}
 
 		// Inital checks to if cookies are invalid.
-		if( $user->isAnon() || $user->getName() !== $request->getCookie( 'UserName' ) ) {
+		if ( $user->isAnon() || $user->getName() !== $request->getCookie( 'UserName' ) ) {
 			$result = false;
 			return true;
 		}
 
 		// Cookies are valid, now check if user is attempting to resume an old session (token is valid, but no session).
-		if(
+		if (
 			$request->getSessionData( 'wsUserID' ) === null &&
 			$user->getToken( false ) === $request->getCookie( 'Token' )
 		) {
@@ -291,7 +291,7 @@ class SecureSessions extends ContextSource {
 
 		// Basically do the same thing as User::loadFromSession, except more strict (rather
 		// than using the session as a fallback for cookies, make sure they match).
-		if(
+		if (
 			$request->getCookie( 'UserID' ) != $request->getSessionData( 'wsUserID' ) ||
 			$user->getName() !== $request->getSessionData( 'wsUserName' ) ||
 			$user->getToken( false ) !== $request->getSessionData( 'wsToken' ) ||
@@ -306,11 +306,11 @@ class SecureSessions extends ContextSource {
 
 		// Add strict transport security if on HTTPS. No need to worry about redirecting when on
 		// HTTP, because MediaWiki::main() will handle that.
-		if( $request->getCookie( 'forceHTTPS' ) && WebRequest::detectProtocol() === 'https' ) {
+		if ( $request->getCookie( 'forceHTTPS' ) && WebRequest::detectProtocol() === 'https' ) {
 			// Calculate max age for the header based on an estimation of how long it will be
 			// until the session expires.
-			$maxage = false;
-			if( $request->getCookie( 'wsToken' ) !== null ) {
+			$maxage = 0;
+			if ( $request->getCookie( 'wsToken' ) !== null ) {
 				// Cookie token, which mean even after the PHP session ends the user might still be
 				// logged in.
 				$maxage = 60 * 60 * 24 * 30;
@@ -318,7 +318,7 @@ class SecureSessions extends ContextSource {
 				// No token cookie, so the session is limited to whenever the PHP session expires.
 				$maxage = ini_get('session.gc_maxlifetime');
 				// If ini_get fails, fall back to PHP's default value.
-				if( $maxage === false ) {
+				if ( $maxage === false ) {
 					// http://www.php.net/manual/en/session.configuration.php#ini.session.gc-maxlifetime
 					$maxage = 1440;
 				}
@@ -342,18 +342,18 @@ class SecureSessions extends ContextSource {
 	public function onUserLoginForm( $template ) {
 		$extrafield = '';
 
-		if( $this->ip === null ) {
+		if ( $this->ip === null ) {
 			$extrafield .= $this->makeCheckRow( 'wpLimitSessionIP', $this->msg( 'securesessions-iprestrict' ) );
 		}
-		if( $this->userAgent === null ) {
+		if ( $this->userAgent === null ) {
 			$extrafield .= $this->makeCheckRow( 'wpLimitSessionUA', $this->msg( 'securesessions-uarestrict' ) );
 		}
-		if( $this->oneSession === null ) {
+		if ( $this->oneSession === null ) {
 			$extrafield .= $this->makeCheckRow( 'wpLimitSessionOne', $this->msg( 'securesessions-ipsession' ) );
 		}
 
 		// Add everything after the existing extra fields.
-		if( isset( $template->data['extrafields'] ) ) {
+		if ( isset( $template->data['extrafields'] ) ) {
 			$extrafield = $template->data['extrafields'] . $extrafield;
 		}
 		$template->set( 'extrafields', $extrafield );
@@ -404,7 +404,7 @@ class SecureSessions extends ContextSource {
 	 */
 	public function onPersonalUrls( array &$personal_urls, Title $title ) {
 		global $wgMemc;
-		if( $this->getUser()->isLoggedIn() ) {
+		if ( $this->getUser()->isLoggedIn() ) {
 			$memcKey = wfMemcKey( $this->getUser()->getId(), 'sessions' );
 			$personal_urls['sessions'] = array(
 				'text' => $this->msg( 'securesessions-personalurl')
@@ -446,9 +446,9 @@ class SecureSessions extends ContextSource {
 		$request = $this->getRequest();
 		$sessions = $wgMemc->get( $memcKey );
 
-		if( $request->getSessionData( 'id' ) !== null ) {
+		if ( $request->getSessionData( 'id' ) !== null ) {
 			$id = $request->getSessionData( 'id' );
-		} elseif( !$deleteOthers && is_array( $sessions ) ) {
+		} elseif ( !$deleteOthers && is_array( $sessions ) ) {
 			end( $sessions );
 			list( $id, $val ) = each( $sessions );
 			$id++;
@@ -457,7 +457,7 @@ class SecureSessions extends ContextSource {
 			$id = 0;
 		}
 
-		if( $deleteOthers || !is_array( $sessions ) ) {
+		if ( $deleteOthers || !is_array( $sessions ) ) {
 			$sessions = array();
 		}
 
@@ -479,12 +479,12 @@ class SecureSessions extends ContextSource {
 		$memcKey = wfMemcKey( $user->getId(), 'sessions' );
 		$request = $this->getRequest();
 
-		if( $request->getSessionData( 'id' ) === null ) {
+		if ( $request->getSessionData( 'id' ) === null ) {
 			return;
 		}
 
 		$sessions = $wgMemc->get( $memcKey );
-		unset( $sessions[$request->getSessionData( 'id' )] );
+		$sessions[$request->getSessionData( 'id' )] = null;
 		$wgMemc->set( $memcKey, $sessions );
 	}
 
