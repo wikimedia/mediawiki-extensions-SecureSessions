@@ -77,8 +77,8 @@ class SpecialSessions extends FormSpecialPage {
 		// Use a separate ID variable because the cache array may have
 		// missing indexes and whatnot from logged out sessions.
 		$id = 1;
-		foreach ( array_filter( (array)$sessions ) as  $sId => $session ) {
-			$timestamp = new MWTimestamp( $sessions['time'] );
+		foreach ( array_filter( (array)$sessions ) as $sId => $session ) {
+			$timestamp = new MWTimestamp( $session['time'] );
 
 			// Make a table describing the session.
 			$description = Html::rawElement( 'table', array(),
