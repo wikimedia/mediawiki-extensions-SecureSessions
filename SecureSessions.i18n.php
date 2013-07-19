@@ -312,6 +312,15 @@ $messages['nl'] = array(
 	'securesessions-disallowedtor' => 'Deze gebruiker mag niet aanmelden vanaf Tor exitnodes.',
 );
 
+/** Polish (polski)
+ * @author Woytecr
+ */
+$messages['pl'] = array(
+	'securesessions-sessions-ip' => 'Adres IP:',
+	'securesessions-sessions-activity' => 'Ostatnia aktywność:',
+	'securesessions-sessions-clear' => 'Wyloguj wszystkie pozostałe sesje',
+);
+
 /** Piedmontese (Piemontèis)
  * @author Borichèt
  * @author Dragonòt
