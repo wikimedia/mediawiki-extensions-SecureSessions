@@ -398,8 +398,10 @@ $messages['ta'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Andriykopanytsia
  * @author Base
  * @author Steve.rusyn
+ * @author SteveR
  * @author Ата
  */
 $messages['uk'] = array(
@@ -415,6 +417,9 @@ $messages['uk'] = array(
 	'securesessions-sessions-activity' => 'Остання активність:',
 	'securesessions-sessions-clear' => 'Вийти з усіх інших сесій',
 	'securesessions-prefs-country' => 'Обмежити вхід за країнами:',
+	'securesessions-prefs-tor' => 'Не дозволяти входи через вузли виходу Tor.',
+	'securesessions-disallowedcountry' => 'Цьому обліковому запису не дозволено вхід з цієї країни.',
+	'securesessions-disallowedtor' => 'Цьому обліковому запису не дозволено вхід у систему з вузлів виходу Tor.',
 );
 
 /** Simplified Chinese (中文（简体）‎)
