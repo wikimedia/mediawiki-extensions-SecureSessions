@@ -358,7 +358,11 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'securesessions-personalurl' => 'Iapre le sessiune ($1)',
+	'securesessions-ipsession' => 'Isse da tutte le otre sessiune.',
+	'securesessions-iprestrict' => 'Sessione ristrette a stu indirizze IP,',
+	'securesessions-uarestrict' => 'Sessione ristrette a stu browser.',
 	'securesessions-sessions' => 'Sessiune',
+	'securesessions-sessions-legend' => "'Mbormaziune sus a sessione",
 	'securesessions-sessions-ip' => 'Indirizze IP:',
 	'securesessions-sessions-activity' => 'Urtema attività:',
 );
