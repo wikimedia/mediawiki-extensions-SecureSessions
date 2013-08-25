@@ -51,7 +51,10 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'securesessions-desc' => '{{desc|name=Secure Sessions|url=http://www.mediawiki.org/wiki/Extension:SecureSessions}}',
-	'securesessions-personalurl' => 'Text for the personal URL next to the Logout link at the top of the page. It takes one parameter: the current number of open sessions',
+	'securesessions-personalurl' => 'Used as text for the link which points to [[Special:Sessions]], next to the Logout link at the top of the page.
+
+Parameters:
+* $1 - the current number of open sessions',
 	'securesessions-ipsession' => 'Label for the checkbox of whether the user wants to log out all other sessions when they log in.',
 	'securesessions-iprestrict' => 'Label for the checkbox of whether the user wants to restrict their login session to the IP address they are using.',
 	'securesessions-uarestrict' => 'Label for the checkbox of whether the user wants to restrict their login to the browser (user agent) they are using.',
