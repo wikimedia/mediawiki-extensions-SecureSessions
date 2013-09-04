@@ -207,6 +207,7 @@ $messages['gl'] = array(
 /** Italian (italiano)
  * @author Beta16
  * @author F. Cosoleto
+ * @author Gianfranco
  */
 $messages['it'] = array(
 	'securesessions-desc' => 'Rende più sicure le sessioni utente e le autenticazione di sessione',
@@ -220,6 +221,10 @@ $messages['it'] = array(
 	'securesessions-sessions-ip' => 'Indirizzo IP:',
 	'securesessions-sessions-activity' => 'Ultima attività:',
 	'securesessions-sessions-clear' => 'Uscire da tutte le altre sessioni',
+	'securesessions-prefs-country' => "Limita l'accesso per paese:",
+	'securesessions-prefs-tor' => "Impedisci l'accesso a nodi di uscita Tor.",
+	'securesessions-disallowedcountry' => 'A questa utenza non è consentito effettuare il login da questo paese.',
+	'securesessions-disallowedtor' => 'A questa utenza non è consentito effettuare il login da nodi di uscita Tor.',
 );
 
 /** Japanese (日本語)
