@@ -100,7 +100,7 @@ $messages['br'] = array(
 	'securesessions-sessions' => "Dalc'hoù",
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Vks
  */
 $messages['cs'] = array(
