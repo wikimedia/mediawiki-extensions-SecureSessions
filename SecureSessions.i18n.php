@@ -499,6 +499,10 @@ $messages['zh-hans'] = array(
 	'securesessions-sessions-ip' => 'IP地址：',
 	'securesessions-sessions-activity' => '最后活动：',
 	'securesessions-sessions-clear' => '注销所有其他会话',
+	'securesessions-prefs-country' => '按国家限制登录：',
+	'securesessions-prefs-tor' => '禁止从 Tor 出口节点登录。',
+	'securesessions-disallowedcountry' => '此账户不允许从此国家登录。',
+	'securesessions-disallowedtor' => '此账户不允许从 Tor 出口节点登录。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
