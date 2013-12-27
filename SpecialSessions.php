@@ -167,6 +167,6 @@ class SpecialSessions extends FormSpecialPage {
 	 * information is updated.
 	 */
 	function onSuccess() {
-		$this->getOutput()->redirect( $this->getTitle()->getFullURL() );
+		$this->getOutput()->redirect( $this->getPageTitle()->getFullURL() );
 	}
 }
