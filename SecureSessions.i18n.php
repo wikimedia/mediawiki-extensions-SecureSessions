@@ -128,6 +128,24 @@ $messages['de'] = array(
 	'securesessions-disallowedtor' => 'Dieses Konto ist nicht zur Anmeldung von Tor-Ausgangsknoten berechtigt.',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'securesessions-desc' => 'Pówušujo wěstotu wužywarskich pósejźenjow a pósejźeńskeje awtentifikacije',
+	'securesessions-personalurl' => 'Wócynjone pósejźenja ($1)',
+	'securesessions-ipsession' => 'Wšykne druge pósejźenja wótzjawiś.',
+	'securesessions-iprestrict' => 'Pósejźenje na toś tu IP-adresu wobgranicowaś.',
+	'securesessions-uarestrict' => 'Pósejźenje na toś ten wobglědowak wobgranicowaś.',
+	'securesessions-sessions' => 'Pósejźenja',
+	'securesessions-sessions-legend' => 'Pósejźeńske informacije',
+	'securesessions-sessions-text' => 'Dołojce wiźiš wšykne wócynjene pósejźenja za twójo konto a informacije wó nich. Móžoš wšykne druge pósejźenja z pomocu slědujucym tłocaškom zacyniś. Gwězdka (*) wóznamjenjujo aktualne pósejźenje.',
+	'securesessions-sessions-ip' => 'IP-adresa:',
+	'securesessions-sessions-activity' => 'Slědna aktiwita:',
+	'securesessions-sessions-clear' => 'Wšykne druge pósejźenja wótzjawiś',
+	'securesessions-prefs-country' => 'Pśizjawjenje pó kraju wobgranicowaś:',
+);
+
 /** Estonian (eesti)
  * @author Avjoska
  */
@@ -204,6 +222,27 @@ $messages['gl'] = array(
 	'securesessions-prefs-tor' => 'Impedir os accesos desde os nodos de saída Tor.',
 	'securesessions-disallowedcountry' => 'Esta conta non ten permiso para acceder desde este país.',
 	'securesessions-disallowedtor' => 'Esta conta non ten permiso para acceder desde nodos de saída Tor.',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'securesessions-desc' => 'Powyša wěstotu wužiwarskich posedźenjow a posedźenskeje awtentifikacije',
+	'securesessions-personalurl' => 'Wočinjene posedźenja ($1)',
+	'securesessions-ipsession' => 'Wšě druhe posedźenja wotzjewić.',
+	'securesessions-iprestrict' => 'Posedźenje na tutu IP-adresu wobmjezować.',
+	'securesessions-uarestrict' => 'Posedźenje na tutón wobhladowak wobmjezować',
+	'securesessions-sessions' => 'Posedźenja',
+	'securesessions-sessions-legend' => 'Posedźenske informacije',
+	'securesessions-sessions-text' => 'Deleka widźiš wšě wočinjene  posedźenja za twoje konto a informacije wo nich. Móžeš wšě druhe posedźenja z pomocu slědowacym tłóčatkom začinić. Hwěžka (*) woznamjenja aktualne posedźenje.',
+	'securesessions-sessions-ip' => 'IP-adresa:',
+	'securesessions-sessions-activity' => 'Poslednja aktiwita:',
+	'securesessions-sessions-clear' => 'Wšě druhe posedźenja wotzjewić',
+	'securesessions-prefs-country' => 'Přizjewjenje po kraju wobmjezować:',
+	'securesessions-prefs-tor' => 'Přizjewjenja z wuchadnych sukow Tor zakazać.',
+	'securesessions-disallowedcountry' => 'Tute konto njesmě so z tutoho kraja přizjewić.',
+	'securesessions-disallowedtor' => 'Tute konto njesmě so z wuchadnych sukow Tor přizjewić.',
 );
 
 /** Italian (italiano)
