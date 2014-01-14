@@ -144,6 +144,9 @@ $messages['dsb'] = array(
 	'securesessions-sessions-activity' => 'Slědna aktiwita:',
 	'securesessions-sessions-clear' => 'Wšykne druge pósejźenja wótzjawiś',
 	'securesessions-prefs-country' => 'Pśizjawjenje pó kraju wobgranicowaś:',
+	'securesessions-prefs-tor' => 'Pśizjawjenja z wuchadnych sukow Tor zakazaś.',
+	'securesessions-disallowedcountry' => 'Toś to konto njesmějo se z toś togo kraja pśizjawiś.',
+	'securesessions-disallowedtor' => 'Toś to konto njesmějo se z wuchadnych sukow Tor pśizjawiś.',
 );
 
 /** Estonian (eesti)
