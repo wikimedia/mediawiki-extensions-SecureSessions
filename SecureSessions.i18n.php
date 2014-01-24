@@ -157,13 +157,20 @@ $messages['et'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Mjbmr
  * @author Reza1615
  */
 $messages['fa'] = array(
+	'securesessions-ipsession' => 'خروج همهٔ جلسات دیگر.',
+	'securesessions-iprestrict' => 'جلسه به این آدرس آی‌پی محدود شده،',
+	'securesessions-uarestrict' => 'جلسه به این مرورگر محدود شده.',
 	'securesessions-sessions' => 'نشست‌ها',
+	'securesessions-sessions-legend' => 'اظلاعات جلسه',
 	'securesessions-sessions-ip' => 'نشانی آی‌پی:',
 	'securesessions-sessions-activity' => 'آخرین فعالیت:',
+	'securesessions-sessions-clear' => 'خروج همهٔ جلسات دیگر',
+	'securesessions-prefs-country' => 'ورود توسط کشور محدود شده:',
 );
 
 /** Finnish (suomi)
