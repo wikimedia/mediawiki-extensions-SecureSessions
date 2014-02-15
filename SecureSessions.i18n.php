@@ -393,9 +393,11 @@ $messages['nl'] = array(
 );
 
 /** Polish (polski)
+ * @author Chrumps
  * @author Woytecr
  */
 $messages['pl'] = array(
+	'securesessions-sessions' => 'Sesje',
 	'securesessions-sessions-ip' => 'Adres IP:',
 	'securesessions-sessions-activity' => 'Ostatnia aktywność:',
 	'securesessions-sessions-clear' => 'Wyloguj wszystkie pozostałe sesje',
