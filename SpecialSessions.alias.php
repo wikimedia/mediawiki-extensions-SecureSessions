@@ -22,9 +22,16 @@
  * @file
  * @ingroup Extensions
  */
+// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
+/** English (English) */
 $specialPageAliases['en'] = array(
 	'Sessions' => array( 'Sessions', 'SecureSessions' ),
+);
+
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'Sessions' => array( 'جلسات' ),
 );
