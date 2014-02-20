@@ -35,3 +35,8 @@ $specialPageAliases['en'] = array(
 $specialPageAliases['fa'] = array(
 	'Sessions' => array( 'جلسات' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'Sessions' => array( '会话', '安全会话' ),
+);
