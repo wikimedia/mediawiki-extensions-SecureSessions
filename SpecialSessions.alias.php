@@ -31,6 +31,11 @@ $specialPageAliases['en'] = array(
 	'Sessions' => array( 'Sessions', 'SecureSessions' ),
 );
 
+/** German (Deutsch) */
+$specialPageAliases['de'] = array(
+	'Sessions' => array( 'Sitzungen' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'Sessions' => array( 'جلسات' ),

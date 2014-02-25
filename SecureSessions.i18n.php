@@ -162,6 +162,7 @@ $messages['et'] = array(
  * @author Reza1615
  */
 $messages['fa'] = array(
+	'securesessions-personalurl' => 'جلسات باز ($1)',
 	'securesessions-ipsession' => 'خروج همهٔ جلسات دیگر.',
 	'securesessions-iprestrict' => 'جلسه به این آدرس آی‌پی محدود شده،',
 	'securesessions-uarestrict' => 'جلسه به این مرورگر محدود شده.',
