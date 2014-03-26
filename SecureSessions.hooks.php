@@ -56,13 +56,13 @@ class SecureSessions extends ContextSource {
 	 * the necessary hooks for the extension.
 	 */
 	public static function setup() {
-		global $wgEnhancedSessionAuth, $wgSessionCycleId, $wgSessionStarted;
+		global $wgEnhancedSessionAuth, $wgSessionCycleId;
 		$request = RequestContext::getMain()->getRequest();
 
 		// Regenerate session ID to avoid fixation, but don't trash
 		// the old session immediately in case there are some asynchronous
 		// requests still using it.
-		if ( $wgSessionCycleId && $wgSessionStarted && $request->getSessionData( 'wsExpiry' ) === null ) {
+		if ( $wgSessionCycleId && session_id() != '' && $request->getSessionData( 'wsExpiry' ) === null ) {
 			// Set obsolete and expiration time.
 			$data = $_SESSION;
 			$request->setSessionData( 'wsObsolete', true );
