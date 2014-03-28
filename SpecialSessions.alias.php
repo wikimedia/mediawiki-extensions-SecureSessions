@@ -55,3 +55,8 @@ $specialPageAliases['fa'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'Sessions' => array( '会话', '安全会话' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'Sessions' => array( '會話' ),
+);
