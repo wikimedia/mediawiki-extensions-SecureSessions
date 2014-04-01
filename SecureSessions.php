@@ -30,7 +30,7 @@
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'SecureSessions',
-	'version' => 0.5,
+	'version' => '0.6.0',
 	'author' => 'Tyler Romeo',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:SecureSessions',
 	'descriptionmsg' => 'securesessions-desc'
@@ -63,4 +63,5 @@ $wgAutoloadClasses['SecureSessions'] = __DIR__ . '/SecureSessions.hooks.php';
 $wgAutoloadClasses['SpecialSessions'] = __DIR__ . '/SpecialSessions.php';
 $wgExtensionFunctions[] = array( 'SecureSessions', 'setup' );
 $wgSpecialPages['Sessions'] = 'SpecialSessions';
+$wgMessagesDirs['SecureSessions'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['SecureSessions'] = __DIR__ . '/SecureSessions.i18n.php';
