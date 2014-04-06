@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Fitoschido"
+        ]
+    },
+    "securesessions-personalurl": "Sesiones abiertas ($1)",
+    "securesessions-sessions": "Sesiones",
+    "securesessions-sessions-legend": "Información de la sesión",
+    "securesessions-sessions-ip": "Dirección IP:",
+    "securesessions-sessions-activity": "Última actividad:"
+}
