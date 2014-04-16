@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Joachim Mos"
-        ]
-    },
-    "securesessions-sessions-ip": "IP-Adress:"
+	"@metadata": {
+		"authors": [
+			"Joachim Mos"
+		]
+	},
+	"securesessions-sessions-ip": "IP-Adress:"
 }

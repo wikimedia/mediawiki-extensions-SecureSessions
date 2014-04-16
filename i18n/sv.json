@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "WikiPhoenix"
-        ]
-    },
-    "securesessions-personalurl": "Öppna sessioner ($1)",
-    "securesessions-ipsession": "Logga ut alla andra sessioner.",
-    "securesessions-sessions": "Sessioner",
-    "securesessions-sessions-ip": "IP-adress:",
-    "securesessions-sessions-activity": "Senaste aktivitet:"
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"securesessions-personalurl": "Öppna sessioner ($1)",
+	"securesessions-ipsession": "Logga ut alla andra sessioner.",
+	"securesessions-sessions": "Sessioner",
+	"securesessions-sessions-ip": "IP-adress:",
+	"securesessions-sessions-activity": "Senaste aktivitet:"
 }

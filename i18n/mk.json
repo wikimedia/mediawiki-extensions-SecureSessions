@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "securesessions-desc": "Дава поголема безбедност за кориснички сесии и нивното скривање",
-    "securesessions-personalurl": "Отворени сесии ($1)",
-    "securesessions-ipsession": "Одјава од сите други сесии",
-    "securesessions-iprestrict": "Ограничи ја сесијата на оваа IP-адреса,",
-    "securesessions-uarestrict": "Ограничи ја сесијата на овој прелистувач.",
-    "securesessions-sessions": "Сесии",
-    "securesessions-sessions-legend": "Информации за сесијата",
-    "securesessions-sessions-text": "Подолу се наведени сите отворени сесии на вашата сметка и информациите за нив. Можете да ги затворите сите други сесии со копчето подолу. Тековната сесија е означена со ѕвездичка (*).",
-    "securesessions-sessions-ip": "IP-адреса:",
-    "securesessions-sessions-activity": "Последна активност:",
-    "securesessions-sessions-clear": "Одјава од сите други сесии",
-    "securesessions-prefs-country": "ограничи најава по земји:",
-    "securesessions-prefs-tor": "Забрани најава од излезни јазли на Tor.",
-    "securesessions-disallowedcountry": "На сметката не ѝ е дозволено да се најавува од оваа земја.",
-    "securesessions-disallowedtor": "На сметката не ѝ е дозволено да се најавува од излезни јазли на Tor."
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"securesessions-desc": "Дава поголема безбедност за кориснички сесии и нивното скривање",
+	"securesessions-personalurl": "Отворени сесии ($1)",
+	"securesessions-ipsession": "Одјава од сите други сесии",
+	"securesessions-iprestrict": "Ограничи ја сесијата на оваа IP-адреса,",
+	"securesessions-uarestrict": "Ограничи ја сесијата на овој прелистувач.",
+	"securesessions-sessions": "Сесии",
+	"securesessions-sessions-legend": "Информации за сесијата",
+	"securesessions-sessions-text": "Подолу се наведени сите отворени сесии на вашата сметка и информациите за нив. Можете да ги затворите сите други сесии со копчето подолу. Тековната сесија е означена со ѕвездичка (*).",
+	"securesessions-sessions-ip": "IP-адреса:",
+	"securesessions-sessions-activity": "Последна активност:",
+	"securesessions-sessions-clear": "Одјава од сите други сесии",
+	"securesessions-prefs-country": "ограничи најава по земји:",
+	"securesessions-prefs-tor": "Забрани најава од излезни јазли на Tor.",
+	"securesessions-disallowedcountry": "На сметката не ѝ е дозволено да се најавува од оваа земја.",
+	"securesessions-disallowedtor": "На сметката не ѝ е дозволено да се најавува од излезни јазли на Tor."
 }

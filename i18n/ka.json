@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "David1010"
-        ]
-    },
-    "securesessions-sessions-ip": "IP-მისამართი:",
-    "securesessions-sessions-activity": "ბოლო აქტიურობა:"
+	"@metadata": {
+		"authors": [
+			"David1010"
+		]
+	},
+	"securesessions-sessions-ip": "IP-მისამართი:",
+	"securesessions-sessions-activity": "ბოლო აქტიურობა:"
 }

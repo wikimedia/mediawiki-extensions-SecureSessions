@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Avjoska"
-        ]
-    },
-    "securesessions-sessions-ip": "IP-aadress:"
+	"@metadata": {
+		"authors": [
+			"Avjoska"
+		]
+	},
+	"securesessions-sessions-ip": "IP-aadress:"
 }
