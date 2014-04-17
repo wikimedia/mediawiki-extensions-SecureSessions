@@ -46,6 +46,11 @@ $specialPageAliases['de'] = array(
 	'Sessions' => array( 'Sitzungen' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'Sessions' => array( 'Ronıştışi', 'İtimadéRonıştışi' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'Sessions' => array( 'جلسات' ),
