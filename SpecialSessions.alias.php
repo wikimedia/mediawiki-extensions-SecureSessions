@@ -56,6 +56,11 @@ $specialPageAliases['fa'] = array(
 	'Sessions' => array( 'جلسات' ),
 );
 
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'Sessions' => array( 'സെഷനുകൾ', 'സുരക്ഷിതസെഷനുകൾ' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'Sessions' => array( '会话', '安全会话' ),
