@@ -8,5 +8,8 @@
 	"securesessions-sessions": "Sesiones",
 	"securesessions-sessions-legend": "Información de la sesión",
 	"securesessions-sessions-ip": "Dirección IP:",
-	"securesessions-sessions-activity": "Última actividad:"
+	"securesessions-sessions-activity": "Última actividad:",
+	"securesessions-prefs-country": "Restringir el acceso por país:",
+	"securesessions-disallowedcountry": "No se puede acceder a esta cuenta desde este país.",
+	"securesessions-disallowedtor": "No se puede acceder a esta cuenta desde nodos de salida de Tor."
 }
