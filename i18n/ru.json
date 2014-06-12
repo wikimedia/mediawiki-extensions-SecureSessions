@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Okras"
+			"Okras",
+			"Agilight"
 		]
 	},
 	"securesessions-desc": "Делает сеансы пользователей и сессии аутентификации более безопасными",
