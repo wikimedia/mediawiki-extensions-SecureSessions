@@ -61,6 +61,11 @@ $specialPageAliases['ko'] = array(
 	'Sessions' => array( '세션', '보안세션' ),
 );
 
+/** Macedonian (македонски) */
+$specialPageAliases['mk'] = array(
+	'Sessions' => array( 'Седници' ),
+);
+
 /** Malayalam (മലയാളം) */
 $specialPageAliases['ml'] = array(
 	'Sessions' => array( 'സെഷനുകൾ', 'സുരക്ഷിതസെഷനുകൾ' ),
