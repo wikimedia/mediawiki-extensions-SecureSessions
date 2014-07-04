@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Woytecr"
+			"Woytecr",
+			"Alan ffm"
 		]
 	},
 	"securesessions-sessions": "Sesje",
+	"securesessions-sessions-legend": "Informacja o sesji",
 	"securesessions-sessions-ip": "Adres IP:",
 	"securesessions-sessions-activity": "Ostatnia aktywność:",
 	"securesessions-sessions-clear": "Wyloguj wszystkie pozostałe sesje"
