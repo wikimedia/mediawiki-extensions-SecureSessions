@@ -61,6 +61,11 @@ $specialPageAliases['ko'] = array(
 	'Sessions' => array( '세션', '보안세션' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$specialPageAliases['lb'] = array(
+	'Sessions' => array( 'Sëtzungen' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'Sessions' => array( 'Седници' ),
