@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"WikiPhoenix",
-			"Lokal Profil"
+			"Lokal Profil",
+			"Jopparn"
 		]
 	},
 	"securesessions-desc": "Gör användarsessioner och sessionsautentisering säkrare",
@@ -12,7 +13,7 @@
 	"securesessions-uarestrict": "Begränsa session till denna webbläsare.",
 	"securesessions-sessions": "Sessioner",
 	"securesessions-sessions-legend": "Sessionsinformation",
-	"securesessions-sessions-text": "Nedan följer alla öppna sessioner för ditt konto och information om dem. DU kan stänga alla andra sessioner med knappen nedan. Asterisken (*) betecknar den aktuella sessionen.",
+	"securesessions-sessions-text": "Nedan följer alla öppna sessioner för ditt konto och information om dem. Du kan stänga alla andra sessioner med knappen nedan. Asterisken (*) betecknar den aktuella sessionen.",
 	"securesessions-sessions-ip": "IP-adress:",
 	"securesessions-sessions-activity": "Senaste aktivitet:",
 	"securesessions-sessions-clear": "Logga ut alla andra sessioner.",
