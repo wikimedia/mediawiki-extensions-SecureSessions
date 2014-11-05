@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Liuxinyu970226"
 		]
 	},
+	"securesessions-sessions": "會話",
 	"securesessions-sessions-ip": "IP位址："
 }
