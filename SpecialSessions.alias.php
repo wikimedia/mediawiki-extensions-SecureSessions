@@ -41,6 +41,11 @@ $specialPageAliases['arz'] = array(
 	'Sessions' => array( 'جلسات', 'جلسات_متأمنه' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'Sessions' => array( 'جلسه_ئان' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'Sessions' => array( 'Sitzungen' ),
