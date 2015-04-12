@@ -46,6 +46,11 @@ $specialPageAliases['bgn'] = array(
 	'Sessions' => array( 'جلسه_ئان' ),
 );
 
+/** Czech (čeština) */
+$specialPageAliases['cs'] = array(
+	'Sessions' => array( 'Relace', 'Zabezpečená_relace', 'Zabezpecena_relace' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'Sessions' => array( 'Sitzungen' ),
