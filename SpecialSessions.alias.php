@@ -36,7 +36,7 @@ $specialPageAliases['ar'] = array(
 	'Sessions' => array( 'جلسات', 'جلسات_آمنة' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'Sessions' => array( 'جلسات', 'جلسات_متأمنه' ),
 );
