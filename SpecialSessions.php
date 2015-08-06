@@ -130,7 +130,7 @@ class SpecialSessions extends FormSpecialPage {
 		$form->setMessagePrefix( 'securesessions' );
 		$form->setSubmitTextMsg( 'securesessions-sessions-clear' );
 
-		wfRunHooks( "SpecialSessionsBeforeFormDisplay", array( &$form ) );
+		Hooks::run( "SpecialSessionsBeforeFormDisplay", array( &$form ) );
 		return $form;
 	}
 
