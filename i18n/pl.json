@@ -3,12 +3,16 @@
 		"authors": [
 			"Chrumps",
 			"Woytecr",
-			"Alan ffm"
+			"Alan ffm",
+			"The Polish"
 		]
 	},
 	"securesessions-sessions": "Sesje",
 	"securesessions-sessions-legend": "Informacja o sesji",
 	"securesessions-sessions-ip": "Adres IP:",
 	"securesessions-sessions-activity": "Ostatnia aktywność:",
-	"securesessions-sessions-clear": "Wyloguj wszystkie pozostałe sesje"
+	"securesessions-sessions-clear": "Wyloguj wszystkie pozostałe sesje",
+	"securesessions-prefs-tor": "Nie zezwalaj na logowanie się z węzłów wyjściowych Tora.",
+	"securesessions-disallowedcountry": "To konto nie może zalogować się z tego kraju.",
+	"securesessions-disallowedtor": "To konto nie może zalogować się z węzłów wyjściowych Tora."
 }
