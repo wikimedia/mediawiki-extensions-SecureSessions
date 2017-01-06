@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Dgstranz"
 		]
 	},
+	"securesessions-desc": "Hace más seguras las sesiones de usuario y la autentificación de sesión.",
 	"securesessions-personalurl": "Sesiones abiertas ($1)",
 	"securesessions-ipsession": "Salir del resto de sesiones.",
 	"securesessions-iprestrict": "Restringir la sesión a esta dirección IP,",
@@ -15,6 +17,7 @@
 	"securesessions-sessions-activity": "Última actividad:",
 	"securesessions-sessions-clear": "Salir del resto de sesiones",
 	"securesessions-prefs-country": "Restringir el acceso por país:",
+	"securesessions-prefs-tor": "Impedir inicios de sesión desde nodos de salida de Tor.",
 	"securesessions-disallowedcountry": "No se puede acceder a esta cuenta desde este país.",
 	"securesessions-disallowedtor": "No se puede acceder a esta cuenta desde nodos de salida de Tor."
 }
