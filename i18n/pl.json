@@ -4,9 +4,12 @@
 			"Chrumps",
 			"Woytecr",
 			"Alan ffm",
-			"The Polish"
+			"The Polish",
+			"Sp5uhe"
 		]
 	},
+	"securesessions-personalurl": "Otwarte sesje ($1)",
+	"securesessions-ipsession": "Wyloguj ze wszystkich innych sesji.",
 	"securesessions-sessions": "Sesje",
 	"securesessions-sessions-legend": "Informacja o sesji",
 	"securesessions-sessions-ip": "Adres IP:",
