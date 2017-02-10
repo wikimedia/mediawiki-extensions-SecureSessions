@@ -1,0 +1,33 @@
+{
+	"name": "SecureSessions",
+	"version": "0.6.0",
+	"author": "Tyler Romeo",
+	"url": "https://www.mediawiki.org/wiki/Extension:SecureSessions",
+	"descriptionmsg": "securesessions-desc",
+	"type": "other",
+	"ExtensionFunctions": [
+		"SecureSessions::setup"
+	],
+	"SpecialPages": {
+		"Sessions": "SpecialSessions"
+	},
+	"MessagesDirs": {
+		"SecureSessions": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SecureSessions": "SecureSessions.hooks.php",
+		"SpecialSessions": "SpecialSessions.php"
+	},
+	"config": {
+		"EnhancedSessionAuth": {
+			"value": true
+		},
+		"SessionCycleId": {
+			"value": false
+		}
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}
