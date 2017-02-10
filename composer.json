@@ -1,0 +1,9 @@
+{
+	"name": "mediawiki/securesessionsw",
+	"type": "mediawiki-extension",
+	"description": "Makes user sessions and session authentication more secure",
+	"license": "GPL-2.0+",
+	"require": {
+		"geoip/geoip": "1.17"
+	}
+}

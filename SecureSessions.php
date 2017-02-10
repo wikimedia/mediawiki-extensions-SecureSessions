@@ -65,3 +65,7 @@ $wgExtensionFunctions[] = array( 'SecureSessions', 'setup' );
 $wgSpecialPages['Sessions'] = 'SpecialSessions';
 $wgMessagesDirs['SecureSessions'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['SecureSessions'] = __DIR__ . '/SecureSessions.i18n.php';
+
+if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
+	require_once __DIR__ . '/vendor/autoload.php';
+}

@@ -526,7 +526,6 @@ class SecureSessions extends ContextSource {
 				$found = $country !== false;
 				break;
 			case 3:
-				require_once( __DIR__ . "/php-geoip/geoip.inc" );
 				$v6 = IP::isIPv6( $ip );
 				$dbname = $v6 ? 'dbv6' : 'db';
 				if( $$dbname === null ) {
