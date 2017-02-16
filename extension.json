@@ -16,6 +16,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"SecureSessionsAlias": "SpecialSessions.alias.php"
+	},
 	"AutoloadClasses": {
 		"SecureSessions": "SecureSessions.hooks.php",
 		"SpecialSessions": "SpecialSessions.php"
