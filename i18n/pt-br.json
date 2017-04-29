@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Felipe L. Ewald"
+		]
+	},
+	"securesessions-sessions": "Sessões",
+	"securesessions-sessions-legend": "Informação de sessão",
+	"securesessions-sessions-ip": "Endereço IP:",
+	"securesessions-sessions-activity": "Última atividade:"
+}
