@@ -3,7 +3,8 @@
 		"authors": [
 			"Crochet.david",
 			"Gomoko",
-			"Sherbrooke"
+			"Sherbrooke",
+			"Seb35"
 		]
 	},
 	"securesessions-desc": "Sécurise davantage les sessions utilisateur et l’authentification de session",
@@ -17,7 +18,7 @@
 	"securesessions-sessions-ip": "Adresse IP :",
 	"securesessions-sessions-activity": "Dernière activité :",
 	"securesessions-sessions-clear": "Terminer toutes les autres sessions.",
-	"securesessions-prefs-country": "Restreindre la connexion par pays:",
+	"securesessions-prefs-country": "Restreindre la connexion par pays :",
 	"securesessions-prefs-tor": "Interdire les connexions depuis les nœuds de sortie de Tor.",
 	"securesessions-disallowedcountry": "Ce compte n’est pas autorisé à se connecter depuis ce pays.",
 	"securesessions-disallowedtor": "Ce compte n’est pas autorisé à se connecter depuis des nœuds de sortie de Tor."
