@@ -83,11 +83,11 @@ class SpecialSessions extends FormSpecialPage {
 			// Make a table describing the session.
 			$description = Html::rawElement( 'table', array(),
 				Html::rawElement( 'tr', array(),
-					Html::element( 'td', array( 'class' => 'mw-label' ), $this->msg( 'securesessions-sessions-ip' ) ) .
+					Html::element( 'td', array( 'class' => 'mw-label' ), $this->msg( 'securesessions-sessions-ip' )->text() ) .
 					Html::element( 'td', array( 'class' => 'mw-input' ), $session['ip'] )
 				) .
 				Html::rawElement( 'tr', array(),
-					Html::element( 'td', array( 'class' => 'mw-label' ), $this->msg( 'securesessions-sessions-activity' ) ) .
+					Html::element( 'td', array( 'class' => 'mw-label' ), $this->msg( 'securesessions-sessions-activity' )->text() ) .
 					Html::element( 'td', array( 'class' => 'mw-input' ), $timestamp->getHumanTimestamp() )
 				)
 			);
@@ -119,7 +119,7 @@ class SpecialSessions extends FormSpecialPage {
 
 		$form = new HTMLForm( $this->fields, $this->getContext() );
 		$form->setSubmitCallback( array( $this, 'onSubmit' ) );
-		$form->setWrapperLegend( $this->msg( 'securesessions-sessions-legend' ) );
+		$form->setWrapperLegendMsg( 'securesessions-sessions-legend' );
 		$form->addHeaderText(
 			$this->msg( 'securesessions-sessions-text' )->parseAsBlock() );
 
