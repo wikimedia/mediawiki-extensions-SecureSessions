@@ -34,6 +34,13 @@ require_once ( getenv( 'MW_INSTALL_PATH' ) !== false
  * Script to update the GeoIP database files.
  */
 class SecureSessionsUpdateDatabase extends Maintenance {
+
+	function __construct() {
+		parent::__construct();
+
+		$this->requireExtension( 'SecureSessions' );
+	}
+
 	public function execute() {
 		if( !function_exists( 'gzuncompress' ) ) {
 			$this->error( 'PHP must be installed with Zlib to use this script.', true );
