@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"securesessions-desc": "Κάνει τις συνεδρίες χρήστη και την ταυτοποίηση συνεδριών πιο ασφαλείς",
+	"securesessions-personalurl": "Ανοιχτές συνεδρίες ($1)",
+	"securesessions-ipsession": "Αποσύνδεση από όλες τις άλλες συνεδρίες.",
+	"securesessions-iprestrict": "Περιορισμός συνεδρίας σε αυτή τη διεύθυνση IP.",
+	"securesessions-uarestrict": "Περιορισμός συνεδρίας σε αυτό το περιηγητή.",
+	"securesessions-sessions": "Συνεδρίες",
+	"securesessions-sessions-legend": "Πληροφορίες συνεδρίας",
+	"securesessions-sessions-text": "Παρακάτω υπάρχουν όλες οι ανοιχτές συνεδρίες για τον λογαριασμό σας και πληροφορίες για αυτές. Μπορείτε να κλείσετε όλες τις άλλες συνεδρίες χρησιμοποιώντας το παρακάτω κουμπί. Ένας αστερίσκος (*) επισημαίνει την τρέχουσα συνεδρία.",
+	"securesessions-sessions-ip": "διεύθυνση IP:",
+	"securesessions-sessions-activity": "Τελευταία δραστηριότητα:",
+	"securesessions-sessions-clear": "Αποσύνδεση από όλες τις άλλες συνεδρίες.",
+	"securesessions-prefs-country": "Περιορισμός σύνδεσης ανά χώρα:",
+	"securesessions-prefs-tor": "Να μην επιτρέπονται συνδέσεις από κόμβους εξόδου του Tor.",
+	"securesessions-disallowedcountry": "Αυτός ο λογαριασμός δεν επιτρέπεται να συνδεθεί από αυτή τη χώρα.",
+	"securesessions-disallowedtor": "Αυτός ο λογαριασμός δεν επιτρέπεται να συνδεθεί από κόμβους εξόδου Tor."
+}
