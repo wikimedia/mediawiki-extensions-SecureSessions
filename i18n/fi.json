@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Veikk0.ma"
+			"Veikk0.ma",
+			"01miki10"
 		]
 	},
 	"securesessions-desc": "Tekee käyttäjien istunnoista ja istuntojen varmistamisesta turvallisempaa",
@@ -14,5 +15,6 @@
 	"securesessions-sessions-text": "Alla näkyvät kaikki tunnuksesi avoimet istunnot ja tietoa niistä. Voit sulkea kaikki muut istunnot painamalla alla olevaa nappia. Nykyinen istunto on merkitty asteriskilla (*).",
 	"securesessions-sessions-ip": "IP-osoite:",
 	"securesessions-sessions-activity": "Viimeisin toiminta:",
-	"securesessions-sessions-clear": "Sulje kaikki muut istunnot."
+	"securesessions-sessions-clear": "Sulje kaikki muut istunnot.",
+	"securesessions-prefs-country": "Rajoita kirjautumista maan perusteella:"
 }
