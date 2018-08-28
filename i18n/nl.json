@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"Kippenvlees1"
 		]
 	},
 	"securesessions-desc": "Maakt gebrukerssessies en sessieverificatie veiliger",
@@ -16,7 +17,7 @@
 	"securesessions-sessions-activity": "Laatste activiteit:",
 	"securesessions-sessions-clear": "Afmelden van alle andere sessies",
 	"securesessions-prefs-country": "Aanmelden beperken op land:",
-	"securesessions-prefs-tor": "Aanmelden vanaf Tor exitnodes weigeren",
+	"securesessions-prefs-tor": "Aanmelden vanaf Tor-exitnodes weigeren.",
 	"securesessions-disallowedcountry": "Deze gebruiker mag niet aanmelden vanuit dit land.",
-	"securesessions-disallowedtor": "Deze gebruiker mag niet aanmelden vanaf Tor exitnodes."
+	"securesessions-disallowedtor": "Deze gebruiker mag zich niet aanmelden vanaf Tor-exitnodes."
 }
