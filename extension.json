@@ -4,6 +4,7 @@
 	"author": "Tyler Romeo",
 	"url": "https://www.mediawiki.org/wiki/Extension:SecureSessions",
 	"descriptionmsg": "securesessions-desc",
+	"license-name": "GPL-3.0-or-later",
 	"type": "other",
 	"requires": {
 		"MediaWiki": ">= 1.29.0"
