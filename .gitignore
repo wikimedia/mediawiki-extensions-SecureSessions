@@ -4,3 +4,4 @@ vendor/
 
 .svn
 *~
+.DS_Store

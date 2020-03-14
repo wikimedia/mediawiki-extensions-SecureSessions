@@ -26,6 +26,8 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 3.0 or later
  */
 
+use Wikimedia\IPUtils;
+
 /**
  * Implements hooks functions for the SecureSessions
  * extension.
@@ -526,7 +528,7 @@ class SecureSessions extends ContextSource {
 				$found = $country !== false;
 				break;
 			case 3:
-				$v6 = IP::isIPv6( $ip );
+				$v6 = IPUtils::isIPv6( $ip );
 				$dbname = $v6 ? 'dbv6' : 'db';
 				if( $$dbname === null ) {
 					if( function_exists( 'shmop_open' ) ) {
