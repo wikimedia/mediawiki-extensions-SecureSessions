@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
 	"securesessions-desc": "Torna as sessões dos usuários e a autenticação da sessão mais seguras",

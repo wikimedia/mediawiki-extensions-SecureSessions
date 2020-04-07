@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand",
-			"Kippenvlees1"
+			"Kippenvlees1",
+			"Siebrand"
 		]
 	},
 	"securesessions-desc": "Maakt gebrukerssessies en sessieverificatie veiliger",

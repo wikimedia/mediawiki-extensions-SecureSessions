@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido",
-			"Dgstranz"
+			"Dgstranz",
+			"Fitoschido"
 		]
 	},
 	"securesessions-desc": "Hace más seguras las sesiones de usuario y la autentificación de sesión.",

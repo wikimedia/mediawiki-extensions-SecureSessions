@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki",
-			"Liuxinyu970226",
+			"Kly",
 			"LNDDYL",
-			"Kly"
+			"Liuxinyu970226",
+			"Shirayuki"
 		]
 	},
 	"securesessions-desc": "讓使用者的 session 與 session 認證更安全",
