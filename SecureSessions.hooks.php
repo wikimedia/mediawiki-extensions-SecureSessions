@@ -176,7 +176,6 @@ class SecureSessions extends ContextSource {
 	 * @return bool true
 	 */
 	public function onUserSetCookies( User $user, array &$session, array &$cookies ) {
-		global $wgMemc;
 		$request = $this->getRequest();
 
 		if (
@@ -405,12 +404,12 @@ class SecureSessions extends ContextSource {
 	 * @return bool true
 	 */
 	public function onPersonalUrls( array &$personal_urls, Title $title ) {
-		global $wgMemc;
 		if ( $this->getUser()->isLoggedIn() ) {
-			$memcKey = wfMemcKey( $this->getUser()->getId(), 'sessions' );
+			$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+			$memcKey = $cache->makeKey( $this->getUser()->getId(), 'sessions' );
 			$personal_urls['sessions'] = array(
 				'text' => $this->msg( 'securesessions-personalurl')
-						->numParams( count( (array) $wgMemc->get( $memcKey ) ) ),
+						->numParams( count( (array) $cache->get( $memcKey ) ) ),
 				'href' => SpecialPage::getTitleFor( 'Sessions' )->getLocalURL(),
 				'active' => $title->equals( SpecialPage::getTitleFor( 'Sessions' ) )
 			);
@@ -443,10 +442,10 @@ class SecureSessions extends ContextSource {
 	 * @param User $user User the session belongs to
 	 */
 	private function updateSessionCache( User $user, $deleteOthers = false ) {
-		global $wgMemc;
-		$memcKey = wfMemcKey( $user->getId(), 'sessions' );
+		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+		$memcKey = $cache->makeKey( $user->getId(), 'sessions' );
 		$request = $this->getRequest();
-		$sessions = $wgMemc->get( $memcKey );
+		$sessions = $cache->get( $memcKey );
 
 		if ( $request->getSessionData( 'id' ) !== null ) {
 			$id = $request->getSessionData( 'id' );
@@ -467,7 +466,7 @@ class SecureSessions extends ContextSource {
 			'ip' => $request->getIP(),
 			'time' => wfTimestampNow()
 		);
-		$wgMemc->set( $memcKey, $sessions );
+		$cache->set( $memcKey, $sessions );
 	}
 
 	/**
@@ -477,17 +476,17 @@ class SecureSessions extends ContextSource {
 	 * @param User $user User the session belongs to
 	 */
 	private function deleteSessionCache( User $user ) {
-		global $wgMemc;
-		$memcKey = wfMemcKey( $user->getId(), 'sessions' );
+		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+		$memcKey = $cache->makeKey( $user->getId(), 'sessions' );
 		$request = $this->getRequest();
 
 		if ( $request->getSessionData( 'id' ) === null ) {
 			return;
 		}
 
-		$sessions = $wgMemc->get( $memcKey );
+		$sessions = $cache->get( $memcKey );
 		$sessions[$request->getSessionData( 'id' )] = null;
-		$wgMemc->set( $memcKey, $sessions );
+		$cache->set( $memcKey, $sessions );
 	}
 
 	/**

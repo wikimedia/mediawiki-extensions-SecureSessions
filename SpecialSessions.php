@@ -69,10 +69,10 @@ class SpecialSessions extends FormSpecialPage {
 	 * @return array Session information
 	 */
 	function getFormFields() {
-		global $wgMemc;
+		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
 		$a = array();
-		$memcKey = wfMemcKey( $this->getUser()->getId(), 'sessions' );
-		$sessions = $wgMemc->get( $memcKey );
+		$memcKey = $cache->makeKey( $this->getUser()->getId(), 'sessions' );
+		$sessions = $cache->get( $memcKey );
 
 		// Use a separate ID variable because the cache array may have
 		// missing indexes and whatnot from logged out sessions.
@@ -142,17 +142,17 @@ class SpecialSessions extends FormSpecialPage {
 	 * @return bool true
 	 */
 	function onSubmit( array $data ) {
-		global $wgMemc;
+		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
 		$request = $this->getRequest();
 		$user = $this->getUser();
 
 		// Reset the session cache to just this session.
-		$memcKey = wfMemcKey( $user->getId(), 'sessions' );
+		$memcKey = $cache->makeKey( $user->getId(), 'sessions' );
 		$sessions = array( $_SESSION['id'] => array(
 			'ip' => $request->getIP(),
 			'time' => wfTimestampNow()
 		) );
-		$wgMemc->set( $memcKey, $sessions );
+		$cache->set( $memcKey, $sessions );
 
 		// Reset the user token to log out all other sessions.
 		$user->setToken();
