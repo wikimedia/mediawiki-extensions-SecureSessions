@@ -404,7 +404,7 @@ class SecureSessions extends ContextSource {
 	 * @return bool true
 	 */
 	public function onPersonalUrls( array &$personal_urls, Title $title ) {
-		if ( $this->getUser()->isLoggedIn() ) {
+		if ( $this->getUser()->isRegistered() ) {
 			$cache = ObjectCache::getInstance( CACHE_ANYTHING );
 			$memcKey = $cache->makeKey( $this->getUser()->getId(), 'sessions' );
 			$personal_urls['sessions'] = array(
